@@ -1,0 +1,271 @@
+0000.006 (0) Opened log file at time: Wed, 25 May 2016 13:02:44 +0000 on https://syncfan.com
+0000.011 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.12.6 WP: 4.5.2 PHP: 7.0.6 (FreeBSD sync1 10.3-RELEASE-p3 FreeBSD 10.3-RELEASE-p3 #0: Tue May 17 08:43:55 UTC 2016     root@amd64-builder.daemonology.net:/usr/obj/usr/src/sys/GENERIC amd64) MySQL: 5.7.12 WPLANG:  Server: nginx/1.8.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 22.3M | 2M) multisite: N openssl: N mcrypt: Y LANG:  ZipArchive::addFile: N
+0000.014 (0) Free space on disk containing Updraft's temporary directory: 22931.3 MB
+0000.022 (0) Tasks: Backup files: 1 (schedule: every4hours) Backup DB:  (schedule: every4hours)
+0000.028 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.041 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1464166963, seconds_ago=14401)
+0000.052 (0) Set semaphore last lock (fd) time to 2016-05-25 13:02:44
+0000.055 (0) Semaphore lock (fd) complete
+0000.065 (0) Backup run: resumption=0, nonce=58cb454f8788, begun at=1464181364 (0s ago), job type=backup
+0000.071 (0) Scheduling a resumption (1) after 300 seconds (1464181664) in case this run gets aborted
+0000.091 (0) Checking if we have a zip executable available
+0000.102 (0) Zip engine: ZipArchive is not available or is disabled (will use PclZip if needed)
+0000.106 (0) Creation of backups of directories: beginning
+0000.115 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.340 (0) Total entities for the zip file: 231 directories, 1504 files (0 skipped as non-modified), 26.1 MB
+0000.345 (0) Only one archive required (UpdraftPlus_PclZip) - will attempt to do in single operation (data: 26703 KB, split: 409600 KB)
+0000.380 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.391 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.402 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.412 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.422 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.432 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.444 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.455 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.469 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.480 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.491 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 1100 files added (on-disk size: 0 KB)
+0000.502 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 1200 files added (on-disk size: 0 KB)
+0000.512 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 1300 files added (on-disk size: 0 KB)
+0000.522 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 1400 files added (on-disk size: 0 KB)
+0000.534 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip.tmp: 1500 files added (on-disk size: 0 KB)
+0009.253 (0) Created plugins zip (0) - 9577.7 KB in 9.1 s (1048.6 KB/s) (SHA1 checksum: 8a3e9a10ccc8f744a903d0b69c05faea07ea9699)
+0009.266 (0) Beginning creation of dump of themes (split every: 400 MB)
+0009.321 (0) Total entities for the zip file: 40 directories, 233 files (0 skipped as non-modified), 5.1 MB
+0009.324 (0) Only one archive required (UpdraftPlus_PclZip) - will attempt to do in single operation (data: 5197.2 KB, split: 409600 KB)
+0009.335 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0009.345 (0) Zip: backup_2016-05-25-2102_syncfancom_58cb454f8788-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0010.324 (0) Created themes zip (0) - 3607.6 KB in 1.1 s (3425.3 KB/s) (SHA1 checksum: 3f623f474557c210885a830e4812241a27fa09f1)
+0010.333 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone
+0010.337 (0) Looking for candidates to back up in: /usr/local/www/nginx/wp-content/uploads
+0010.340 (0) finding files: 2016: adding to list (1)
+0010.343 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0010.352 (0) Total entities for the zip file: 2 directories, 24 files (0 skipped as non-modified), 2.2 MB
+0010.355 (0) Only one archive required (UpdraftPlus_PclZip) - will attempt to do in single operation (data: 2233.7 KB, split: 409600 KB)
+0010.551 (0) Created uploads zip (0) - 2210.7 KB in 0.2 s (10860.3 KB/s) (SHA1 checksum: 7dc18e8df7fd9715a931f0749f43d12fa266bd38)
+0010.562 (0) Beginning backup of other directories found in the content directory (index: 0)
+0010.565 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0010.568 (0) Looking for candidates to back up in: /usr/local/www/nginx/wp-content
+0010.571 (0) finding files: themes: skipping: this is the themes directory
+0010.573 (0) finding files: plugins: skipping: this is the plugins directory
+0010.576 (0) finding files: index.php: adding to list (1)
+0010.579 (0) finding files: languages: adding to list (2)
+0010.582 (0) finding files: upgrade: skipping: excluded by options
+0010.584 (0) finding files: wflogs: adding to list (3)
+0010.587 (0) finding files: uploads: skipping: this is the uploads directory
+0010.590 (0) finding files: updraft: skipping: this is the updraft directory
+0010.598 (0) Total entities for the zip file: 4 directories, 28 files (0 skipped as non-modified), 1.4 MB
+0010.601 (0) Only one archive required (UpdraftPlus_PclZip) - will attempt to do in single operation (data: 1482.5 KB, split: 409600 KB)
+0010.757 (0) Created others zip (0) - 457 KB in 0.2 s (2785.2 KB/s) (SHA1 checksum: e147a890c42f4c9bec6fb3c71317c53339639cf4)
+0010.772 (0) Saving backup status to database (elements: 8)
+0010.779 (0) Beginning creation of database dump (WordPress DB)
+0010.786 (0) Testing: /usr/local/bin/mysqldump
+0010.858 (0) Working binary mysqldump found: /usr/local/bin/mysqldump
+0010.882 (0) Table wp_options: Total expected rows (approximate): 205
+0010.926 (0) Table wp_options: Total rows added: 208 in 0.04 seconds
+0010.931 (0) Table wp_options: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_options.table.gz - 128.7 KB)
+0010.944 (0) Table wp_users: Total expected rows (approximate): 2
+0010.949 (0) Table wp_users: Total rows added: 2 in 0.00 seconds
+0010.952 (0) Table wp_users: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_users.table.gz - 0.6 KB)
+0010.962 (0) Table wp_usermeta: Total expected rows (approximate): 35
+0010.967 (0) Table wp_usermeta: Total rows added: 36 in 0.00 seconds
+0010.971 (0) Table wp_usermeta: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_usermeta.table.gz - 1.8 KB)
+0010.981 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0010.984 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0010.987 (0) Table wp_commentmeta: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0010.998 (0) Table wp_comments: Total expected rows (approximate): 0
+0011.004 (0) Table wp_comments: Total rows added: 1 in 0.00 seconds
+0011.007 (0) Table wp_comments: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_comments.table.gz - 0.8 KB)
+0011.017 (0) Table wp_links: Total expected rows (approximate): 0
+0011.022 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0011.026 (0) Table wp_links: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_links.table.gz - 0.4 KB)
+0011.036 (0) Table wp_postmeta: Total expected rows (approximate): 16
+0011.041 (0) Table wp_postmeta: Total rows added: 16 in 0.00 seconds
+0011.045 (0) Table wp_postmeta: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_postmeta.table.gz - 1.1 KB)
+0011.062 (0) Table wp_posts: Total expected rows (approximate): 16
+0011.068 (0) Table wp_posts: Total rows added: 16 in 0.00 seconds
+0011.072 (0) Table wp_posts: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_posts.table.gz - 2.1 KB)
+0011.081 (0) Table wp_term_relationships: Total expected rows (approximate): 6
+0011.085 (0) Table wp_term_relationships: Total rows added: 5 in 0.00 seconds
+0011.088 (0) Table wp_term_relationships: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_term_relationships.table.gz - 0.4 KB)
+0011.097 (0) Table wp_term_taxonomy: Total expected rows (approximate): 46
+0011.102 (0) Table wp_term_taxonomy: Total rows added: 49 in 0.00 seconds
+0011.105 (0) Table wp_term_taxonomy: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_term_taxonomy.table.gz - 0.7 KB)
+0011.117 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0011.121 (0) Table wp_termmeta: Total rows added: 0 in 0.00 seconds
+0011.124 (0) Table wp_termmeta: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_termmeta.table.gz - 0.4 KB)
+0011.134 (0) Table wp_terms: Total expected rows (approximate): 44
+0011.139 (0) Table wp_terms: Total rows added: 49 in 0.00 seconds
+0011.142 (0) Table wp_terms: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_terms.table.gz - 1.5 KB)
+0011.153 (0) Table wp_wfbadleechers: Total expected rows (approximate): 0
+0011.160 (0) Table wp_wfbadleechers: Total rows added: 0 in 0.00 seconds
+0011.163 (0) Table wp_wfbadleechers: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfbadleechers.table.gz - 0.3 KB)
+0011.173 (0) Table wp_wfblockediplog: Total expected rows (approximate): 0
+0011.179 (0) Table wp_wfblockediplog: Total rows added: 0 in 0.00 seconds
+0011.182 (0) Table wp_wfblockediplog: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfblockediplog.table.gz - 0.3 KB)
+0011.191 (0) Table wp_wfblocks: Total expected rows (approximate): 0
+0011.200 (0) Table wp_wfblocks: Total rows added: 0 in 0.00 seconds
+0011.203 (0) Table wp_wfblocks: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfblocks.table.gz - 0.3 KB)
+0011.215 (0) Table wp_wfblocksadv: Total expected rows (approximate): 0
+0011.220 (0) Table wp_wfblocksadv: Total rows added: 0 in 0.00 seconds
+0011.224 (0) Table wp_wfblocksadv: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfblocksadv.table.gz - 0.3 KB)
+0011.234 (0) Table wp_wfconfig: Total expected rows (approximate): 116
+0011.239 (0) Table wp_wfconfig: Total rows added: 130 in 0.00 seconds
+0011.243 (0) Table wp_wfconfig: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfconfig.table.gz - 2.4 KB)
+0011.255 (0) Table wp_wfcrawlers: Total expected rows (approximate): 4
+0011.279 (0) Table wp_wfcrawlers: Total rows added: 5 in 0.00 seconds
+0011.302 (0) Table wp_wfcrawlers: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfcrawlers.table.gz - 0.5 KB)
+0011.319 (0) Table wp_wffilemods: Total expected rows (approximate): 2878
+0011.392 (0) Table wp_wffilemods: Total rows added: 2823 in 0.05 seconds
+0011.400 (0) Table wp_wffilemods: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wffilemods.table.gz - 136.4 KB)
+0011.411 (0) Table wp_wfhits: Total expected rows (approximate): 433
+0011.433 (0) Table wp_wfhits: Total rows added: 433 in 0.02 seconds
+0011.438 (0) Table wp_wfhits: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfhits.table.gz - 7.4 KB)
+0011.450 (0) Table wp_wfhoover: Total expected rows (approximate): 0
+0011.455 (0) Table wp_wfhoover: Total rows added: 0 in 0.00 seconds
+0011.459 (0) Table wp_wfhoover: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfhoover.table.gz - 0.3 KB)
+0011.477 (0) Table wp_wfissues: Total expected rows (approximate): 0
+0011.483 (0) Table wp_wfissues: Total rows added: 0 in 0.00 seconds
+0011.486 (0) Table wp_wfissues: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfissues.table.gz - 0.3 KB)
+0011.499 (0) Table wp_wfleechers: Total expected rows (approximate): 12
+0011.505 (0) Table wp_wfleechers: Total rows added: 13 in 0.00 seconds
+0011.508 (0) Table wp_wfleechers: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfleechers.table.gz - 0.5 KB)
+0011.519 (0) Table wp_wflockedout: Total expected rows (approximate): 0
+0011.525 (0) Table wp_wflockedout: Total rows added: 0 in 0.00 seconds
+0011.528 (0) Table wp_wflockedout: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wflockedout.table.gz - 0.3 KB)
+0011.544 (0) Table wp_wflocs: Total expected rows (approximate): 3
+0011.550 (0) Table wp_wflocs: Total rows added: 3 in 0.00 seconds
+0011.554 (0) Table wp_wflocs: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wflocs.table.gz - 0.5 KB)
+0011.579 (0) Table wp_wflogins: Total expected rows (approximate): 11
+0011.586 (0) Table wp_wflogins: Total rows added: 11 in 0.00 seconds
+0011.590 (0) Table wp_wflogins: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wflogins.table.gz - 0.8 KB)
+0011.606 (0) Table wp_wfnet404s: Total expected rows (approximate): 0
+0011.612 (0) Table wp_wfnet404s: Total rows added: 0 in 0.00 seconds
+0011.615 (0) Table wp_wfnet404s: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfnet404s.table.gz - 0.3 KB)
+0011.630 (0) Table wp_wfreversecache: Total expected rows (approximate): 8
+0011.636 (0) Table wp_wfreversecache: Total rows added: 8 in 0.00 seconds
+0011.640 (0) Table wp_wfreversecache: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfreversecache.table.gz - 0.5 KB)
+0011.653 (0) Table wp_wfscanners: Total expected rows (approximate): 1
+0011.660 (0) Table wp_wfscanners: Total rows added: 2 in 0.00 seconds
+0011.663 (0) Table wp_wfscanners: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfscanners.table.gz - 0.3 KB)
+0011.684 (0) Table wp_wfstatus: Total expected rows (approximate): 210
+0011.695 (0) Table wp_wfstatus: Total rows added: 210 in 0.01 seconds
+0011.699 (0) Table wp_wfstatus: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfstatus.table.gz - 4.4 KB)
+0011.720 (0) Table wp_wfthrottlelog: Total expected rows (approximate): 0
+0011.727 (0) Table wp_wfthrottlelog: Total rows added: 0 in 0.00 seconds
+0011.731 (0) Table wp_wfthrottlelog: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfthrottlelog.table.gz - 0.3 KB)
+0011.748 (0) Table wp_wfvulnscanners: Total expected rows (approximate): 0
+0011.753 (0) Table wp_wfvulnscanners: Total rows added: 0 in 0.00 seconds
+0011.757 (0) Table wp_wfvulnscanners: finishing file (backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfvulnscanners.table.gz - 0.3 KB)
+0011.773 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_options.table.gz (1/32): adding to final database dump
+0011.808 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_users.table.gz (2/32): adding to final database dump
+0011.813 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_usermeta.table.gz (3/32): adding to final database dump
+0011.819 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_commentmeta.table.gz (4/32): adding to final database dump
+0011.823 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_comments.table.gz (5/32): adding to final database dump
+0011.827 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_links.table.gz (6/32): adding to final database dump
+0011.831 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_postmeta.table.gz (7/32): adding to final database dump
+0011.835 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_posts.table.gz (8/32): adding to final database dump
+0011.839 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_term_relationships.table.gz (9/32): adding to final database dump
+0011.843 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_term_taxonomy.table.gz (10/32): adding to final database dump
+0011.852 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_termmeta.table.gz (11/32): adding to final database dump
+0011.857 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_terms.table.gz (12/32): adding to final database dump
+0011.861 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfbadleechers.table.gz (13/32): adding to final database dump
+0011.865 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfblockediplog.table.gz (14/32): adding to final database dump
+0011.869 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfblocks.table.gz (15/32): adding to final database dump
+0011.873 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfblocksadv.table.gz (16/32): adding to final database dump
+0011.878 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfconfig.table.gz (17/32): adding to final database dump
+0011.883 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfcrawlers.table.gz (18/32): adding to final database dump
+0011.887 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wffilemods.table.gz (19/32): adding to final database dump
+0011.916 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfhits.table.gz (20/32): adding to final database dump
+0011.923 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfhoover.table.gz (21/32): adding to final database dump
+0011.928 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfissues.table.gz (22/32): adding to final database dump
+0011.932 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfleechers.table.gz (23/32): adding to final database dump
+0011.936 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wflockedout.table.gz (24/32): adding to final database dump
+0011.940 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wflocs.table.gz (25/32): adding to final database dump
+0011.943 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wflogins.table.gz (26/32): adding to final database dump
+0011.947 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfnet404s.table.gz (27/32): adding to final database dump
+0011.951 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfreversecache.table.gz (28/32): adding to final database dump
+0011.955 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfscanners.table.gz (29/32): adding to final database dump
+0011.959 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfstatus.table.gz (30/32): adding to final database dump
+0011.963 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfthrottlelog.table.gz (31/32): adding to final database dump
+0011.966 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db-table-wp_wfvulnscanners.table.gz (32/32): adding to final database dump
+0011.970 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db.gz: finished writing out complete database file (264 KB)
+0011.990 (0) Total database tables backed up: 32 (backup_2016-05-25-2102_syncfancom_58cb454f8788-db.gz, size: 296184, checksum (SHA1): 8d337b5f0ce6e7799bdd4f508ecc9da782fe119c)
+0012.015 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0012.019 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0012.022 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0012.026 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-others.zip: others: This file has not yet been successfully uploaded: will queue
+0012.029 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db.gz: db: This file has not yet been successfully uploaded: will queue
+0012.033 (0) Saving backup history. Total backup size: 15.8 MB
+0012.044 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0012.060 (0) Cloud backup selection (1/1): googledrive (last)
+0012.064 (0) Beginning dispatch of backup to remote (googledrive)
+0012.072 (0) Google Drive: requesting access token: client_id=1035258975592-kreb312ikhkcragb8au5iea5cqqbsr2m.apps.googleusercontent.com
+0012.327 (0) Google Drive: successfully obtained access token
+0013.615 (0) Google Drive quota usage: used=192.1 MB, total=15360 MB, available=15167.9 MB
+0013.625 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip: Attempting to upload to Google Drive (into folder id: 0B_pt0ax7WDgnLU5GUkdxMmtVZE0)
+0014.099 (0) Googledrive chunked upload: 10.7 % uploaded (1048576)
+0014.339 (0) Googledrive chunked upload: 21.4 % uploaded (2097152)
+0014.614 (0) Googledrive chunked upload: 32.1 % uploaded (3145728)
+0014.884 (0) Googledrive chunked upload: 42.8 % uploaded (4194304)
+0015.108 (0) Googledrive chunked upload: 53.5 % uploaded (5242880)
+0015.360 (0) Googledrive chunked upload: 64.1 % uploaded (6291456)
+0015.632 (0) Googledrive chunked upload: 74.8 % uploaded (7340032)
+0015.873 (0) Googledrive chunked upload: 85.5 % uploaded (8388608)
+0016.123 (0) Googledrive chunked upload: 96.2 % uploaded (9437184)
+0017.256 (0) Googledrive chunked upload: 100 % uploaded (9437184)
+0017.266 (0) OK: Archive backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip uploaded to Google Drive in 3.64 seconds
+0017.276 (0) Recording as successfully uploaded: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip (e4a01dc5f5af1c613e351506592ce06b)
+0017.294 (0) Deleting local file: backup_2016-05-25-2102_syncfancom_58cb454f8788-plugins.zip: OK
+0017.647 (0) Google Drive quota usage: used=201.5 MB, total=15360 MB, available=15158.5 MB
+0017.654 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-themes.zip: Attempting to upload to Google Drive (into folder id: 0B_pt0ax7WDgnLU5GUkdxMmtVZE0)
+0018.154 (0) Googledrive chunked upload: 28.4 % uploaded (1048576)
+0018.451 (0) Googledrive chunked upload: 56.8 % uploaded (2097152)
+0018.736 (0) Googledrive chunked upload: 85.2 % uploaded (3145728)
+0019.924 (0) Googledrive chunked upload: 100 % uploaded (3145728)
+0019.943 (0) OK: Archive backup_2016-05-25-2102_syncfancom_58cb454f8788-themes.zip uploaded to Google Drive in 2.29 seconds
+0019.953 (0) Recording as successfully uploaded: backup_2016-05-25-2102_syncfancom_58cb454f8788-themes.zip (a43b1cc7de44b88ff7e23a422a0993e1)
+0019.969 (0) Deleting local file: backup_2016-05-25-2102_syncfancom_58cb454f8788-themes.zip: OK
+0020.314 (0) Google Drive quota usage: used=205 MB, total=15360 MB, available=15155 MB
+0020.322 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-uploads.zip: Attempting to upload to Google Drive (into folder id: 0B_pt0ax7WDgnLU5GUkdxMmtVZE0)
+0020.886 (0) Googledrive chunked upload: 46.3 % uploaded (1048576)
+0021.135 (0) Googledrive chunked upload: 92.6 % uploaded (2097152)
+0022.054 (0) Googledrive chunked upload: 100 % uploaded (2097152)
+0022.069 (0) OK: Archive backup_2016-05-25-2102_syncfancom_58cb454f8788-uploads.zip uploaded to Google Drive in 1.74 seconds
+0022.077 (0) Recording as successfully uploaded: backup_2016-05-25-2102_syncfancom_58cb454f8788-uploads.zip (1be4250d77898c0c3dc28ee0e0d0ebfa)
+0022.091 (0) Deleting local file: backup_2016-05-25-2102_syncfancom_58cb454f8788-uploads.zip: OK
+0022.398 (0) Google Drive quota usage: used=207.2 MB, total=15360 MB, available=15152.8 MB
+0022.406 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-others.zip: Attempting to upload to Google Drive (into folder id: 0B_pt0ax7WDgnLU5GUkdxMmtVZE0)
+0023.701 (0) Googledrive chunked upload: 100 % uploaded
+0023.713 (0) OK: Archive backup_2016-05-25-2102_syncfancom_58cb454f8788-others.zip uploaded to Google Drive in 1.3 seconds
+0023.724 (0) Recording as successfully uploaded: backup_2016-05-25-2102_syncfancom_58cb454f8788-others.zip (da48947048576ad444ad1cac2ae2d811)
+0023.736 (0) Deleting local file: backup_2016-05-25-2102_syncfancom_58cb454f8788-others.zip: OK
+0024.062 (0) Google Drive quota usage: used=207.6 MB, total=15360 MB, available=15152.4 MB
+0024.069 (0) backup_2016-05-25-2102_syncfancom_58cb454f8788-db.gz: Attempting to upload to Google Drive (into folder id: 0B_pt0ax7WDgnLU5GUkdxMmtVZE0)
+0025.116 (0) Googledrive chunked upload: 100 % uploaded
+0025.127 (0) OK: Archive backup_2016-05-25-2102_syncfancom_58cb454f8788-db.gz uploaded to Google Drive in 1.05 seconds
+0025.134 (0) Recording as successfully uploaded: backup_2016-05-25-2102_syncfancom_58cb454f8788-db.gz (4a986247e5bd30b7688b4504b42279e3)
+0025.146 (0) Deleting local file: backup_2016-05-25-2102_syncfancom_58cb454f8788-db.gz: OK
+0025.153 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=40, retain_db=40
+0025.158 (0) Number of backup sets in history: 2; groups (db): 1
+0025.161 (0) Examining (for databases) backup set with group_id=0, nonce=58cb454f8788, datestamp=1464181364 (May 25 2016 13:02:44)
+0025.164 (0) This backup set is the backup set just made, so will not be deleted.
+0025.167 (0) Examining (for databases) backup set with group_id=0, nonce=66fd2ab84b95, datestamp=1464166963 (May 25 2016 09:02:43)
+0025.170 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0025.174 (0) Number of backup sets in history: 2; groups (files): 1
+0025.177 (0) Examining (for files) backup set with nonce=58cb454f8788, datestamp=1464181364 (May 25 2016 13:02:44)
+0025.180 (0) This backup set is the backup set just made, so will not be deleted.
+0025.183 (0) This backup set is the backup set just made, so will not be deleted.
+0025.183 (0) This backup set is the backup set just made, so will not be deleted.
+0025.183 (0) This backup set is the backup set just made, so will not be deleted.
+0025.183 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0025.187 (0) Examining (for files) backup set with nonce=66fd2ab84b95, datestamp=1464166963 (May 25 2016 09:02:43)
+0025.191 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0025.194 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0025.204 (0) Resume backup (58cb454f8788, 0): finish run
+0025.217 (0) Decremented the semaphore (fd) by 1
+0025.223 (0) Semaphore (fd) unlocked
+0025.226 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0025.238 (0) The backup apparently succeeded and is now complete
+0025.242 (0) No email will/can be sent - the user has not configured an email address.
+0025.245 (0) 备份成功完成
