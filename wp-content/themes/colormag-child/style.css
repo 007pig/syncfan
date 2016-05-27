@@ -11,3 +11,87 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  colormag-child
 */
+
+.archive #content article p {
+    font-size: 14px;
+}
+.archive #content article:nth-child(2n+1) {
+    float: right;
+    width: 48.7013%;
+}
+.archive #content article:nth-child(2n) {
+    float: left;
+    width: 48.7013%;
+    clear: both;
+}
+.archive #content article:first-child {
+    float: none;
+    width: 100%;
+}
+.archive #content article:not(:first-child) .article-content .entry-title {
+    font-size: 22px;
+}
+#content article {
+}
+.single #content article,
+#content article {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+#content article {
+    margin-bottom: 30px;
+}
+.single #content article {
+    margin-bottom: 0;
+}
+#content article img {
+    margin-bottom: 0;
+}
+#content article .article-content {
+    padding: 15px;
+}
+#content article .article-content .above-entry-meta .cat-links a {
+    background-color: #289dcc;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 3px 10px;
+}
+#content article .article-content .entry-title {
+    padding: 5px 0 0;
+    font-size: 32px;
+}
+#content article .article-content .entry-title a {
+    color: #232323;
+}
+#content article .article-content .entry-title a:hover {
+    color: #289dcc;
+}
+#content article .article-content .below-entry-meta articleed-on,
+#content article .article-content .below-entry-meta .byline,
+#content article .article-content .below-entry-meta .comments,
+#content article .article-content .below-entry-meta .tag-links {
+    padding-right: 10px;
+}
+#content article .article-content .below-entry-meta articleed-on .fa {
+    color: #888888;
+    font-size: 10px;
+    padding-right: 3px;
+}
+#content article .article-content .below-entry-meta .byline .fa,
+#content article .article-content .below-entry-meta .comments .fa,
+#content article .article-content .below-entry-meta .tag-links .fa,
+#content article .article-content .below-entry-meta .edit-link .fa {
+    color: #888888;
+    padding-right: 5px;
+    font-size: 11px;
+}
+#content article .article-content .below-entry-meta articleed-on a,
+#content article .article-content .below-entry-meta .byline a,
+#content article .article-content .below-entry-meta .comments a,
+#content article .article-content .below-entry-meta .tag-links a,
+#content article .article-content .below-entry-meta .edit-link a {
+    font-size: 12px;
+}
+#content article .article-content .below-entry-meta {
+    padding-bottom: 20px;
+}
