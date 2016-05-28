@@ -17,48 +17,169 @@
             <?php the_title(); ?>
             <span class="year">(<?php the_field('movie_year'); ?>)</span>
         </h1>
+        <?php colormag_entry_meta(); ?>
     </header>
 
-    <?php
-    $image_popup_id = get_post_thumbnail_id();
-    $image_popup_url = wp_get_attachment_url($image_popup_id);
-    ?>
+    <div class="clearfix" style="padding-left: 15px; padding-right: 15px;">
+        <?php
+        $image_popup_id = get_post_thumbnail_id();
+        $image_popup_url = wp_get_attachment_url($image_popup_id);
+        ?>
 
-    <?php if (has_post_thumbnail()) { ?>
-        <div class="featured-image">
-            <?php if (get_theme_mod('colormag_featured_image_popup', 0) == 1) { ?>
-                <a href="<?php echo $image_popup_url; ?>"
-                   class="image-popup"><?php the_post_thumbnail('colormag-featured-image'); ?></a>
-            <?php } else { ?>
-                <?php the_post_thumbnail('colormag-featured-image'); ?>
-            <?php } ?>
+        <?php if (has_post_thumbnail()) { ?>
+            <div class="featured-image">
+                <?php if (get_theme_mod('colormag_featured_image_popup', 0) == 1) { ?>
+                    <a href="<?php echo $image_popup_url; ?>"
+                       class="image-popup"><?php the_post_thumbnail('syncfan-featured-image-movie'); ?></a>
+                <?php } else { ?>
+                    <?php the_post_thumbnail('syncfan-featured-image-movie'); ?>
+                <?php } ?>
+            </div>
+        <?php } ?>
+
+        <div class="movie-metadata">
+            <table>
+                <tr>
+                    <td>又　　名：</td>
+                    <td><?php the_field('movie_alias') ?></td>
+                </tr>
+                <tr>
+                    <td>类　　别：</td>
+                    <td><?php
+                        $movie_types = get_field('movie_type');
+                        $out = '';
+                        foreach ($movie_types as $movie_type) {
+                            $out .= $movie_type->name . ' / ';
+                        }
+                        echo substr($out, 0, -3);
+                        ?></td>
+                </tr>
+                <tr>
+                    <td>国　　家：</td>
+                    <td><?php
+                        $movie_countries = get_field('movie_country');
+                        $out = '';
+                        foreach ($movie_countries as $movie_country) {
+                            $out .= $movie_country->name . ' / ';
+                        }
+                        echo substr($out, 0, -3);
+                        ?></td>
+                </tr>
+                <tr>
+                    <td>语　　言：</td>
+                    <td><?php
+                        $movie_languages = get_field('movie_language');
+                        $out = '';
+                        foreach ($movie_languages as $movie_language) {
+                            $out .= $movie_language->name . ' / ';
+                        }
+                        echo substr($out, 0, -3);
+                        ?></td>
+                </tr>
+                <tr>
+                    <td>上映日期：</td>
+                    <td><?php the_field('movie_release_date') ?></td>
+                </tr>
+                <tr>
+                    <td>片　　长：</td>
+                    <td><?php the_field('movie_length') ?> 分钟</td>
+                </tr>
+                <tr>
+                    <td>导　　演：</td>
+                    <td><?php
+                        $movie_directors = get_field('movie_director');
+                        $out = '';
+                        foreach ($movie_directors as $movie_director) {
+                            $out .= $movie_director->name . ' / ';
+                        }
+                        echo substr($out, 0, -3);
+                        ?></td>
+                </tr>
+                <tr>
+                    <td>演　　员：</td>
+                    <td><?php
+                        $movie_actors = get_field('movie_actor');
+                        $out = '';
+                        foreach ($movie_actors as $movie_actor) {
+                            $out .= $movie_actor->name . ' / ';
+                        }
+                        echo substr($out, 0, -3);
+                        ?></td>
+                </tr>
+                <?php if (get_field('movie_douban_rating')): ?>
+                    <tr>
+                        <td>豆瓣评分：</td>
+                        <td><?php the_field('movie_douban_rating') ?>/10</td>
+                    </tr>
+                <?php endif; ?>
+                <?php if (get_field('movie_douban_link')): ?>
+                    <tr>
+                        <td>豆瓣链接：</td>
+                        <td><a href="<?php the_field('movie_douban_link') ?>" target="_blank">点击这里</a></td>
+                    </tr>
+                <?php endif; ?>
+                <?php if (get_field('movie_imdb_rating')): ?>
+                    <tr>
+                        <td>IMDb评分：</td>
+                        <td><?php the_field('movie_imdb_rating') ?>/10</td>
+                    </tr>
+                <?php endif; ?>
+                <?php if (get_field('movie_imdb_link')): ?>
+                    <tr>
+                        <td>IMDb链接：</td>
+                        <td><a href="<?php the_field('movie_imdb_link') ?>" target="_blank">点击这里</a></td>
+                    </tr>
+                <?php endif; ?>
+            </table>
         </div>
-    <?php } ?>
-
-    <div class="movie-metadata">
-        <table>
-            <tr>
-                <td>片名：</td>
-                <td><?php the_field('movie_name'); ?></td>
-            </tr>
-        </table>
     </div>
 
     <div class="article-content clearfix">
 
-        <?php if (get_post_format()) {
-            get_template_part('inc/post-formats');
-        } ?>
+        <?php
+        $resources = get_field('resource');
+        if ($resources) :
+            ?>
 
-        <?php colormag_colored_category(); ?>
+            <h5>资源下载</h5>
 
-        <header class="entry-header">
-            <h1 class="entry-title">
-                <?php the_title(); ?>
-            </h1>
-        </header>
+            <p>强烈建议您使用 BTSync 下载，使用教程请点击这里。</p>
 
-        <?php colormag_entry_meta(); ?>
+            <table>
+                <tr>
+                    <th>资源类型</th>
+                    <th>下载链接（点击下载）</th>
+                </tr>
+                <?php foreach ($resources as $resource): ?>
+                    <tr>
+                        <td>
+                            <?php
+                            switch ($resource['resource_type']) {
+                                case 'btsync':
+                                    echo 'BTSync';
+                                    break;
+                                case 'magnet':
+                                    echo '磁力链';
+                                    break;
+                                case 'ed2k':
+                                    echo '电驴';
+                                    break;
+                            }
+                            ?>
+                        </td>
+                        <td>
+                            <a href="<?php echo $resource['resource_link'] ?>" target="_blank">
+                                <?php echo wp_strip_all_tags($resource['resource_desc']) ?>
+                            </a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+            <?php
+        endif;
+        ?>
+
+        <h5>内容简介</h5>
 
         <div class="entry-content clearfix">
             <?php
@@ -73,6 +194,37 @@
             ));
             ?>
         </div>
+
+        <h5>精彩截图</h5>
+
+        <?php
+
+        $images = get_field('movie_screenshot');
+
+        if( $images ): ?>
+            <ul class="movie-screenshot-container clearfix">
+                <?php foreach( $images as $image ): ?>
+                    <li>
+                        <?php if (get_theme_mod('colormag_featured_image_popup', 0) == 1) { ?>
+                            <a href="<?php echo $image['url']; ?>" class="image-popup">
+                                <img src="<?php echo $image['sizes']['syncfan-movie-screenshot']; ?>"
+                                     width="<?php echo $image['sizes']['syncfan-movie-screenshot-width']; ?>"
+                                     height="<?php echo $image['sizes']['syncfan-movie-screenshot-height']; ?>"
+                                     alt="<?php echo $image['alt']; ?>" />
+                            </a>
+                        <?php } else { ?>
+                            <a href="<?php echo $image['url']; ?>">
+                                <img src="<?php echo $image['sizes']['syncfan-movie-screenshot']; ?>"
+                                     width="<?php echo $image['sizes']['syncfan-movie-screenshot-width']; ?>"
+                                     height="<?php echo $image['sizes']['syncfan-movie-screenshot-height']; ?>"
+                                     alt="<?php echo $image['alt']; ?>" />
+                            </a>
+                        <?php } ?>
+                        <p><?php echo $image['caption']; ?></p>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
 
     </div>
 

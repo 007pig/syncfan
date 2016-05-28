@@ -1,5 +1,7 @@
 <?php
 
+const POST_LIKE_POSTTYPES = ['post', 'movie', 'tv'];
+
 // Load parent css
 add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
@@ -24,6 +26,9 @@ add_action( 'after_setup_theme', function () {
     });
 });
 
+// Images sizes
+add_image_size( 'syncfan-featured-image-movie', 350, 493, true );
+add_image_size( 'syncfan-movie-screenshot', 0, 200, true );
 
 
 
@@ -105,14 +110,14 @@ class syncfan_featured_posts_widget extends WP_Widget {
         if( $type == 'latest' ) {
             $get_featured_posts = new WP_Query( array(
                 'posts_per_page'        => $number,
-                'post_type'             => ['post', 'movie', 'tv'],
+                'post_type'             => POST_LIKE_POSTTYPES,
                 'ignore_sticky_posts'   => true
             ) );
         }
         else {
             $get_featured_posts = new WP_Query( array(
                 'posts_per_page'        => $number,
-                'post_type'             => ['post', 'movie', 'tv'],
+                'post_type'             => POST_LIKE_POSTTYPES,
                 'category__in'          => $category
             ) );
         }
@@ -186,4 +191,42 @@ class syncfan_featured_posts_widget extends WP_Widget {
         <!-- </div> -->
         <?php echo $after_widget;
     }
+}
+
+/**
+ * Shows meta information of post.
+ */
+function colormag_entry_meta() {
+    if ( in_array(get_post_type(), POST_LIKE_POSTTYPES)  ) :
+        echo '<div class="below-entry-meta">';
+        ?>
+
+        <?php
+        $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
+        if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+            $time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
+        }
+        $time_string = sprintf( $time_string,
+            esc_attr( get_the_date( 'c' ) ),
+            esc_html( get_the_date() ),
+            esc_attr( get_the_modified_date( 'c' ) ),
+            esc_html( get_the_modified_date() )
+        );
+        printf( __( '<span class="posted-on"><a href="%1$s" title="%2$s" rel="bookmark"><i class="fa fa-calendar-o"></i> %3$s</a></span>', 'colormag' ),
+            esc_url( get_permalink() ),
+            esc_attr( get_the_time() ),
+            $time_string
+        ); ?>
+        
+        <?php
+        if ( ! post_password_required() && comments_open() ) { ?>
+            <span class="comments"><?php comments_popup_link( __( '<i class="fa fa-comment"></i> 0 Comment', 'colormag' ), __( '<i class="fa fa-comment"></i> 1 Comment', 'colormag' ), __( '<i class="fa fa-comments"></i> % Comments', 'colormag' ) ); ?></span>
+        <?php }
+        $tags_list = get_the_tag_list( '<span class="tag-links"><i class="fa fa-tags"></i>', __( ', ', 'colormag' ), '</span>' );
+        if ( $tags_list ) echo $tags_list;
+
+        edit_post_link( __( 'Edit', 'colormag' ), '<span class="edit-link"><i class="fa fa-edit"></i>', '</span>' );
+
+        echo '</div>';
+    endif;
 }
