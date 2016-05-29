@@ -8,6 +8,19 @@
  */
 ?>
 
+<?php
+    if (has_category('电影')) {
+        $nav_label = '电影';
+        $nav_color = '#1e73be';
+    }
+    else {
+        $nav_label = '电视剧';
+        $nav_color = '#38b1f7';
+    }
+?>
+
+<h3 class="nav" style="border-bottom-color:<?=$nav_color?>;"><span style="background:<?=$nav_color?>;"><?=$nav_label?></span></h3>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php do_action('colormag_before_post_content'); ?>
 

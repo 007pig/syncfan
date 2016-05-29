@@ -15,8 +15,6 @@
 	<div id="primary">
 		<div id="content" class="clearfix">
 
-            <h3 class="nav" style="border-bottom-color:#1e73be;"><span style="background:#1e73be;">电影</span></h3>
-
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'single-movie' ); ?>
