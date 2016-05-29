@@ -154,7 +154,7 @@ class syncfan_featured_posts_widget extends WP_Widget {
                 <div class="article-content">
                     <?php colormag_colored_category(); ?>
                     <h3 class="entry-title">
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_title(); ?></a>
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_field('movie_name_chinese'); ?> <?php the_title(); ?></a>
                     </h3>
                     <div class="below-entry-meta">
                         <?php
@@ -169,7 +169,6 @@ class syncfan_featured_posts_widget extends WP_Widget {
                             $time_string
                         );
                         ?>
-                        <span class="byline"><span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo get_the_author(); ?>"><?php echo esc_html( get_the_author() ); ?></a></span></span>
                         <span class="comments"><i class="fa fa-comment"></i><?php comments_popup_link( '0', '1', '%' );?></span>
                     </div>
                     <?php if( $i == 1 ) { ?>
@@ -217,7 +216,7 @@ function colormag_entry_meta() {
             esc_attr( get_the_time() ),
             $time_string
         ); ?>
-        
+
         <?php
         if ( ! post_password_required() && comments_open() ) { ?>
             <span class="comments"><?php comments_popup_link( __( '<i class="fa fa-comment"></i> 0 Comment', 'colormag' ), __( '<i class="fa fa-comment"></i> 1 Comment', 'colormag' ), __( '<i class="fa fa-comments"></i> % Comments', 'colormag' ) ); ?></span>
