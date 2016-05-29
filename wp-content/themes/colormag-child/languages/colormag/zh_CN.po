@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ColorMag\n"
 "POT-Creation-Date: 2016-05-26 21:58+0800\n"
-"PO-Revision-Date: 2016-05-26 21:59+0800\n"
+"PO-Revision-Date: 2016-05-30 00:25+0800\n"
 "Language-Team: ThemeGrill <themegrill@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,55 +22,55 @@ msgstr ""
 
 #: 404.php:22
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "哎...页面又挂了？！"
 
 #: 404.php:24
 msgid "It looks like nothing was found at this location. Try the search below."
-msgstr ""
+msgstr "这儿貌似什么都没有，不妨试试下面的搜索功能？"
 
 #: archive.php:36
 #, php-format
 msgid "Author: %s"
-msgstr ""
+msgstr "作者: %s"
 
 #: archive.php:44
 #, php-format
 msgid "Day: %s"
-msgstr ""
+msgstr "日：%s"
 
 #: archive.php:47
 #, php-format
 msgid "Month: %s"
-msgstr ""
+msgstr "月： %s"
 
 #: archive.php:50
 #, php-format
 msgid "Year: %s"
-msgstr ""
+msgstr "年：%s"
 
 #: archive.php:53
 msgid "Asides"
-msgstr ""
+msgstr "旁白"
 
 #: archive.php:56
 msgid "Images"
-msgstr ""
+msgstr "图像"
 
 #: archive.php:59
 msgid "Videos"
-msgstr ""
+msgstr "视频"
 
 #: archive.php:62
 msgid "Quotes"
-msgstr ""
+msgstr "引用"
 
 #: archive.php:65
 msgid "Links"
-msgstr ""
+msgstr "链接"
 
 #: archive.php:68
 msgid "Archives"
-msgstr ""
+msgstr "归档"
 
 #: comments.php:31
 #, php-format
@@ -81,171 +81,171 @@ msgstr[0] ""
 
 #: comments.php:38 comments.php:55
 msgid "Comment navigation"
-msgstr ""
+msgstr "评论导航"
 
 #: comments.php:39 comments.php:56
 msgid "&larr; Older Comments"
-msgstr ""
+msgstr "&larr; 较早评论"
 
 #: comments.php:40 comments.php:57
 msgid "Newer Comments &rarr;"
-msgstr ""
+msgstr "最新评论 &rarr;"
 
 #: comments.php:67
 msgid "Comments are closed."
-msgstr ""
+msgstr "评论已关闭."
 
 #: content-page.php:24 content-single.php:48
 msgid "Pages:"
-msgstr ""
+msgstr "页面:"
 
 #: content.php:38
 msgid "Read more"
-msgstr ""
+msgstr "阅读更多"
 
 #: functions.php:44
 msgid "Primary Menu"
-msgstr ""
+msgstr "主菜单"
 
 #: inc/admin/meta-boxes.php:16 inc/admin/meta-boxes.php:18
 msgid "Select Layout"
-msgstr ""
+msgstr "选择布局"
 
 #: inc/admin/meta-boxes.php:28
 msgid "Default Layout"
-msgstr ""
+msgstr "默认布局"
 
 #: inc/admin/meta-boxes.php:33 inc/widgets/widgets.php:21
 msgid "Right Sidebar"
-msgstr ""
+msgstr "右侧边栏"
 
 #: inc/admin/meta-boxes.php:38 inc/widgets/widgets.php:32
 msgid "Left Sidebar"
-msgstr ""
+msgstr "左侧边栏"
 
 #: inc/admin/meta-boxes.php:43
 msgid "No Sidebar Full Width"
-msgstr ""
+msgstr "无边栏全宽"
 
 #: inc/admin/meta-boxes.php:48
 msgid "No Sidebar Content Centered"
-msgstr ""
+msgstr "无侧边栏内容居中"
 
 #: inc/customizer.php:22
 msgid "Documentation"
-msgstr ""
+msgstr "文档"
 
 #: inc/customizer.php:26
 msgid "Support"
-msgstr ""
+msgstr "支持"
 
 #: inc/customizer.php:30
 msgid "View Demo"
-msgstr ""
+msgstr "查看演示"
 
 #: inc/customizer.php:34
 msgid "Rate This Theme"
-msgstr ""
+msgstr "评价主题"
 
 #: inc/customizer.php:46
 msgid "ColorMag Theme Important Links"
-msgstr ""
+msgstr "ColorMag 主题重要链接"
 
 #: inc/customizer.php:58
 msgid "Important Links"
-msgstr ""
+msgstr "重要链接"
 
 #: inc/customizer.php:67
 msgid "Change the Header Settings from here as you want"
-msgstr ""
+msgstr "如有需要请在这里修改顶部设定"
 
 #: inc/customizer.php:69
 msgid "Header Options"
-msgstr ""
+msgstr "顶部选项"
 
 #: inc/customizer.php:74
 msgid "Breaking News"
-msgstr ""
+msgstr "突发新闻"
 
 #: inc/customizer.php:87
 msgid "Check to enable the breaking news section"
-msgstr ""
+msgstr "勾选以启用突发新闻区域"
 
 #: inc/customizer.php:94
 msgid "Show Date"
-msgstr ""
+msgstr "显示日期"
 
 #: inc/customizer.php:107
 msgid "Check to show the date in header"
-msgstr ""
+msgstr "勾选以便在顶部显示日期"
 
 #: inc/customizer.php:114
 msgid "Show Home Icon"
-msgstr ""
+msgstr "显示主页图标"
 
 #: inc/customizer.php:127
 msgid "Check to show the home icon in the primary menu"
-msgstr ""
+msgstr "勾选以便在主菜单中显示主页图标"
 
 #: inc/customizer.php:134
 msgid "Sticky Menu"
-msgstr ""
+msgstr "导航固定菜单"
 
 #: inc/customizer.php:147
 msgid "Check to enable the sticky behavior of the primary menu"
-msgstr ""
+msgstr "勾选以启用主菜单的固定行为"
 
 #: inc/customizer.php:154
 msgid "Search Icon"
-msgstr ""
+msgstr "搜索图标"
 
 #: inc/customizer.php:167
 msgid "Check to display the Search Icon in the primary menu"
-msgstr ""
+msgstr "勾选以便在主菜单中显示搜索图标"
 
 #: inc/customizer.php:174
 msgid "Random Post"
-msgstr ""
+msgstr "随机文章"
 
 #: inc/customizer.php:187
 msgid "Check to display the Random Post Icon in the primary menu"
-msgstr ""
+msgstr "勾选以便在主菜单中显示随机文章"
 
 #: inc/customizer.php:195
 msgid "Header Logo"
-msgstr ""
+msgstr "顶部Logo"
 
 #: inc/customizer.php:206
 msgid "Upload logo for your header"
-msgstr ""
+msgstr "上传顶部Logo"
 
 #: inc/customizer.php:219
 msgid "Choose the option that you want"
-msgstr ""
+msgstr "选择所需选项"
 
 #: inc/customizer.php:222 inc/customizer.php:760
 msgid "Header Logo Only"
-msgstr ""
+msgstr "顶部仅显示LOGO"
 
 #: inc/customizer.php:223 inc/customizer.php:761
 msgid "Header Text Only"
-msgstr ""
+msgstr "顶部仅显示文本"
 
 #: inc/customizer.php:224 inc/customizer.php:762
 msgid "Show Both"
-msgstr ""
+msgstr "两者都显示"
 
 #: inc/customizer.php:225 inc/customizer.php:763
 msgid "Disable"
-msgstr ""
+msgstr "禁用"
 
 #: inc/customizer.php:232
 msgid "Header Image Position"
-msgstr ""
+msgstr "顶部图像位置"
 
 #: inc/customizer.php:244
 msgid "Header image display position"
-msgstr ""
+msgstr "顶部图形显示位置"
 
 #: inc/customizer.php:247 inc/customizer.php:774
 msgid "Display the Header image just above the site title/text."
