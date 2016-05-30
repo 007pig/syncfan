@@ -33,7 +33,7 @@ add_action( 'after_setup_theme', function () {
 // Images sizes
 add_image_size( 'syncfan-featured-image-movie', 350, 493, true );
 add_image_size( 'syncfan-movie-screenshot', 0, 200, true );
-add_image_size( 'syncfan-featured-image', 630, 300, true );
+add_image_size( 'syncfan-featured-image', 800, 445, true );
 
 /**
  * ACF Bidirectional Relationships
