@@ -152,9 +152,21 @@ class syncfan_featured_posts_widget extends WP_Widget {
                 }
                 ?>
                 <div class="article-content">
-                    <?php colormag_colored_category(); ?>
+                    <div class="above-entry-meta">
+                        <?php
+                        switch (get_post_type()) {
+                            case 'movie':
+                                syncfan_colored_term('movie_type');
+                                break;
+                            case 'software':
+                                syncfan_colored_term('software_type');
+                                syncfan_colored_term('platform');
+                                break;
+                        }
+                        ?>
+                    </div>
                     <h3 class="entry-title">
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_field('movie_name_chinese'); ?> <?php the_title(); ?></a>
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_field('movie_name_chinese'); ?> <?php the_title(); ?> <?php the_field('software_version'); ?></a>
                     </h3>
                     <div class="below-entry-meta">
                         <?php
@@ -423,4 +435,29 @@ function syncfan_colored_term($term_name) {
         $output .='</span>';
         echo trim($output, $separator);
     }
+}
+
+/**
+ * Break news
+ */
+function colormag_breaking_news() {
+    $get_featured_posts = new WP_Query( array(
+        'posts_per_page'        => 5,
+        'post_type'             => POST_LIKE_POSTTYPES,
+        'ignore_sticky_posts'   => true
+    ) );
+    ?>
+    <div class="breaking-news">
+        <strong class="breaking-news-latest"><?php _e( 'Latest:', 'colormag' ); ?></strong>
+        <ul class="newsticker">
+            <?php while( $get_featured_posts->have_posts() ):$get_featured_posts->the_post(); ?>
+                <li>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_field('movie_name_chinese'); ?> <?php the_title(); ?> <?php the_field('software_version'); ?></a>
+                </li>
+            <?php endwhile; ?>
+        </ul>
+    </div>
+    <?php
+    // Reset Post Data
+    wp_reset_query();
 }
