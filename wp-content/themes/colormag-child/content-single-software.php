@@ -15,6 +15,11 @@ $nav_color = colormag_category_color(get_cat_ID($nav_label));
 
 <h3 class="nav" style="border-bottom-color:<?=$nav_color?>;"><span style="background:<?=$nav_color?>;"><?=$nav_label?></span></h3>
 
+<div class="above-entry-meta">
+    <?php syncfan_colored_term('software_type'); ?>
+    <?php syncfan_colored_term('platform'); ?>
+</div>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php do_action( 'colormag_before_post_content' ); ?>
 
@@ -46,6 +51,11 @@ $nav_color = colormag_category_color(get_cat_ID($nav_label));
         <?php syncfan_show_download_resources(); ?>
 
         <h5>软件介绍</h5>
+
+        <div class="above-entry-meta">
+            <?php syncfan_colored_term('software_type'); ?>
+            <?php syncfan_colored_term('platform'); ?>
+        </div>
 
         <div class="entry-content clearfix">
             <?php
