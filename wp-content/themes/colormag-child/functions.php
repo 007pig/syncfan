@@ -382,7 +382,7 @@ function syncfan_show_download_resources() {
                                             echo '百度云';
                                             break;
                                         case 'ctfile':
-                                            echo '诚通网盘';
+                                            echo '城通网盘';
                                             break;
                                         case '360':
                                             echo '360云盘';
