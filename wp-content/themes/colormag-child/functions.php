@@ -406,3 +406,26 @@ function syncfan_show_download_resources() {
             <?php
         endif;
 }
+
+/**
+ * Show colored term
+ */
+function syncfan_colored_term($term_name) {
+    global $post;
+    $categories = get_the_category();
+    $separator = '&nbsp;';
+    $output = '';
+    if($categories) {
+        $output .= '<div class="above-entry-meta"><span class="cat-links">';
+        foreach($categories as $category) {
+            $color_code = colormag_category_color(get_cat_id($category->cat_name));
+            if (!empty($color_code)) {
+                $output .= '<a href="'.get_category_link( $category->term_id ).'" style="background:' . colormag_category_color(get_cat_id($category->cat_name)) . '" rel="category tag">'.$category->cat_name.'</a>'.$separator;
+            } else {
+                $output .= '<a href="'.get_category_link( $category->term_id ).'"  rel="category tag">'.$category->cat_name.'</a>'.$separator;
+            }
+        }
+        $output .='</span></div>';
+        echo trim($output, $separator);
+    }
+}

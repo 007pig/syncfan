@@ -166,13 +166,13 @@
             ?>
         </div>
 
-        <h5>精彩截图</h5>
-
         <?php
-
         $images = get_field('movie_screenshot');
+        if ($images):
+        ?>
 
-        if( $images ): ?>
+            <h5>精彩截图</h5>
+
             <ul class="movie-screenshot-container clearfix">
                 <?php foreach( $images as $image ): ?>
                     <li>

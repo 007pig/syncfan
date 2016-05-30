@@ -141,6 +141,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 .single-software #content article header h1
 {
     padding-bottom: 0;
+    font-size: 36px;
 }
 .single-movie #content article header .below-entry-meta,
 .single-software #content article header .below-entry-meta

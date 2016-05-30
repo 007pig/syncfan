@@ -43,8 +43,8 @@ $nav_color = colormag_category_color(get_cat_ID($nav_label));
 
     <div class="article-content clearfix">
 
-        <?php if( get_post_format() ) { get_template_part( 'inc/post-formats' ); } ?>
-        
+        <?php syncfan_show_download_resources(); ?>
+
         <h5>软件介绍</h5>
 
         <div class="entry-content clearfix">
@@ -59,6 +59,37 @@ $nav_color = colormag_category_color(get_cat_ID($nav_label));
             ) );
             ?>
         </div>
+
+        <?php
+        $images = get_field('software_screenshot');
+        if ($images):
+            ?>
+
+            <h5>软件截图</h5>
+
+            <ul class="movie-screenshot-container clearfix">
+                <?php foreach( $images as $image ): ?>
+                    <li>
+                        <?php if (get_theme_mod('colormag_featured_image_popup', 0) == 1) { ?>
+                            <a href="<?php echo $image['url']; ?>" class="image-popup">
+                                <img src="<?php echo $image['sizes']['syncfan-movie-screenshot']; ?>"
+                                     width="<?php echo $image['sizes']['syncfan-movie-screenshot-width']; ?>"
+                                     height="<?php echo $image['sizes']['syncfan-movie-screenshot-height']; ?>"
+                                     alt="<?php echo $image['alt']; ?>" />
+                            </a>
+                        <?php } else { ?>
+                            <a href="<?php echo $image['url']; ?>">
+                                <img src="<?php echo $image['sizes']['syncfan-movie-screenshot']; ?>"
+                                     width="<?php echo $image['sizes']['syncfan-movie-screenshot-width']; ?>"
+                                     height="<?php echo $image['sizes']['syncfan-movie-screenshot-height']; ?>"
+                                     alt="<?php echo $image['alt']; ?>" />
+                            </a>
+                        <?php } ?>
+                        <p><?php echo $image['caption']; ?></p>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
 
     </div>
 
