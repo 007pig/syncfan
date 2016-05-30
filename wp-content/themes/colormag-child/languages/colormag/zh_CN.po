@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ColorMag\n"
 "POT-Creation-Date: 2016-05-26 21:58+0800\n"
-"PO-Revision-Date: 2016-05-30 00:25+0800\n"
+"PO-Revision-Date: 2016-05-30 18:33+0800\n"
 "Language-Team: ThemeGrill <themegrill@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: 404.php:22
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "哎...页面又挂了？！"
+msgstr "有点尴尬诶，该页无法显示。"
 
 #: 404.php:24
 msgid "It looks like nothing was found at this location. Try the search below."
@@ -249,57 +249,57 @@ msgstr "顶部图形显示位置"
 
 #: inc/customizer.php:247 inc/customizer.php:774
 msgid "Display the Header image just above the site title/text."
-msgstr ""
+msgstr "在站点标题上方显示顶部图像"
 
 #: inc/customizer.php:248 inc/customizer.php:775
 msgid ""
 "Default: Display the Header image between site title/text and the main/"
 "primary menu."
-msgstr ""
+msgstr "默认：在站点标题和主菜单之间显示顶部图像。"
 
 #: inc/customizer.php:249 inc/customizer.php:776
 msgid "Display the Header image below main/primary menu."
-msgstr ""
+msgstr "在主菜单下方显示顶部图像。"
 
 #: inc/customizer.php:261
 msgid "Check to make header image link back to home page"
-msgstr ""
+msgstr "勾选以便链接顶部图像至首页"
 
 #: inc/customizer.php:268
 msgid "Change the Design Settings from here as you want"
-msgstr ""
+msgstr "如有需要，请在这里修改设计界面"
 
 #: inc/customizer.php:270
 msgid "Design Options"
-msgstr ""
+msgstr "设计选项"
 
 #: inc/customizer.php:276
 msgid "Front Page Settings"
-msgstr ""
+msgstr "首页设定"
 
 #: inc/customizer.php:287
 msgid "Check to hide blog posts/static page on front page"
-msgstr ""
+msgstr "勾选以便隐藏首页的博客文章/统计页"
 
 #: inc/customizer.php:294
 msgid "Site Layout"
-msgstr ""
+msgstr "站点布局"
 
 #: inc/customizer.php:306
 msgid "Choose your site layout. The change is reflected in whole site"
-msgstr ""
+msgstr "请选择站点布局，这里的改动将会影响整个站点。"
 
 #: inc/customizer.php:308 inc/customizer.php:787
 msgid "Boxed Layout"
-msgstr ""
+msgstr "框式布局"
 
 #: inc/customizer.php:309 inc/customizer.php:788
 msgid "Wide Layout"
-msgstr ""
+msgstr "宽布局"
 
 #: inc/customizer.php:379
 msgid "Default layout"
-msgstr ""
+msgstr "默认布局"
 
 #: inc/customizer.php:391
 msgid ""
@@ -307,128 +307,135 @@ msgid ""
 "categories, search page etc. The layout for a single post and page can be "
 "controlled from below options"
 msgstr ""
+"请选择默认布局，这里的布局将会影响所有归档页、目录页、搜索页等等。单文章和单"
+"页面的布局可以通过下面的选项控制。"
 
 #: inc/customizer.php:405
 msgid "Default layout for pages only"
-msgstr ""
+msgstr "仅用于页面的默认布局"
 
 #: inc/customizer.php:417
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for specific page"
 msgstr ""
+"请选择页面的默认布局，这里的布局将会影响到所有页面，除非你为某个页面单独指定"
+"了特殊布局。"
 
 #: inc/customizer.php:431
 msgid "Default layout for single posts only"
-msgstr ""
+msgstr "仅用于文章的默认布局"
 
 #: inc/customizer.php:443
 msgid ""
 "Select default layout for single posts. This layout will be reflected in all "
 "single posts unless unique layout is set for specific post"
 msgstr ""
+"请选择文章的默认布局，这里的布局将会影响到所有文章，除非你为某篇文章单独指定"
+"了特殊布局。"
 
 #: inc/customizer.php:458
 msgid "Primary color option"
-msgstr ""
+msgstr "主色彩选项"
 
 #: inc/customizer.php:469
 msgid ""
 "This will reflect in links, buttons and many others. Choose a color to match "
 "your site"
 msgstr ""
+"这里的设定将会影响链接、按钮和其他类似地方。请为您的站点选择合适的色彩。"
 
 #: inc/customizer.php:492
 msgid "Custom CSS"
-msgstr ""
+msgstr "自定义CSS"
 
 #: inc/customizer.php:504
 msgid "Write your custom css"
-msgstr ""
+msgstr "编写自定义CSS"
 
 #: inc/customizer.php:513
 msgid "Social Options"
-msgstr ""
+msgstr "社交媒体选项"
 
 #: inc/customizer.php:514
 msgid "Change the Social Links Settings from here as you want"
-msgstr ""
+msgstr "如有需要，请在这里修改社交媒体链接设定"
 
 #: inc/customizer.php:520
 msgid "Activate social links area"
-msgstr ""
+msgstr "激活社交媒体链接区域"
 
 #: inc/customizer.php:532
 msgid "Check to activate social links area"
-msgstr ""
+msgstr "勾选以便激活社交媒体区域"
 
 #: inc/customizer.php:540 inc/header-functions.php:20
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
 #: inc/customizer.php:545 inc/header-functions.php:21
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: inc/customizer.php:550 inc/header-functions.php:22
 msgid "Google-Plus"
-msgstr ""
+msgstr "Google+"
 
 #: inc/customizer.php:555 inc/header-functions.php:23
 msgid "Instagram"
-msgstr ""
+msgstr "Instagram"
 
 #: inc/customizer.php:560 inc/header-functions.php:24
 msgid "Pinterest"
-msgstr ""
+msgstr "Pinterest"
 
 #: inc/customizer.php:565 inc/header-functions.php:25
 msgid "YouTube"
-msgstr ""
+msgstr "YouTube"
 
 #: inc/customizer.php:595
 msgid "Check to show in new tab"
-msgstr ""
+msgstr "勾选以便在新浏览器标签中显示"
 
 #: inc/customizer.php:609
 msgid "Change the Additional Settings from here as you want"
-msgstr ""
+msgstr "如有需要，请在这里修改附加设定"
 
 #: inc/customizer.php:611
 msgid "Additional Options"
-msgstr ""
+msgstr "附加选项"
 
 #: inc/customizer.php:617
 msgid "Activate favicon"
-msgstr ""
+msgstr "激活Favicon"
 
 #: inc/customizer.php:629
 msgid "Check to activate favicon. Upload favicon from below option"
-msgstr ""
+msgstr "勾选以便激活Favicon。在下面上传Favicon"
 
 #: inc/customizer.php:641
 msgid "Upload favicon for your site"
-msgstr ""
+msgstr "上传你的Favicon"
 
 #: inc/customizer.php:649
 msgid "Related Posts"
-msgstr ""
+msgstr "相关文章"
 
 #: inc/customizer.php:661
 msgid "Check to activate the related posts"
-msgstr ""
+msgstr "勾选以便激活相关文章"
 
 #: inc/customizer.php:674
 msgid "Related Posts Must Be Shown As:"
-msgstr ""
+msgstr "相关文章必须按照以下方式显示："
 
 #: inc/customizer.php:678 inc/customizer.php:748
 msgid "Related Posts By Categories"
-msgstr ""
+msgstr "按文章分类显示相关文章"
 
 #: inc/customizer.php:679 inc/customizer.php:749
 msgid "Related Posts By Tags"
-msgstr ""
+msgstr "按标签显示相关文章"
 
 #: inc/customizer.php:686
 msgid "Image Lightbox"
