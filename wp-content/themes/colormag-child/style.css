@@ -137,10 +137,14 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     padding-right: 10px;
 }
 
-.single-movie #content article header h1 {
+.single-movie #content article header h1,
+.single-software #content article header h1
+{
     padding-bottom: 0;
 }
-.single-movie #content article header .below-entry-meta {
+.single-movie #content article header .below-entry-meta,
+.single-software #content article header .below-entry-meta
+{
     padding-bottom: 18px;
     font-size: 15px;
 }
@@ -150,14 +154,18 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     margin-right: 15px;
 }
 
-.single-movie #content h3.nav {
+.single-movie #content h3.nav,
+.single-software #content h3.nav
+{
     border-bottom: 2px solid #289dcc;
     font-size: 18px;
     margin-bottom: 15px;
     padding-bottom: 0;
 }
 
-.single-movie #content h3.nav span {
+.single-movie #content h3.nav span,
+.single-software #content h3.nav span
+{
     background-color: #289dcc;
     color: #fff;
     padding: 6px 12px;

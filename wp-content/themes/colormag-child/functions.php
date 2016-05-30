@@ -1,6 +1,6 @@
 <?php
 
-const POST_LIKE_POSTTYPES = ['post', 'movie', 'tv'];
+const POST_LIKE_POSTTYPES = ['post', 'movie', 'tv', 'software'];
 
 // Load parent css
 add_action( 'wp_enqueue_scripts', function () {
@@ -334,3 +334,75 @@ function bidirectional_acf_update_value( $value, $post_id, $field  ) {
 
 // Add movie
 add_filter('acf/update_value/name=related_movies', 'bidirectional_acf_update_value', 10, 3);
+
+/**
+ * Show resources
+ */
+function syncfan_show_download_resources() {
+
+        $resources = get_field('resource');
+        if ($resources) :
+            ?>
+
+            <h5>资源下载</h5>
+
+            <p>强烈建议您使用 BTSync 下载，使用教程请点击这里。</p>
+
+            <table>
+                <tr>
+                    <th>资源名称</th>
+                    <th>下载链接（点击下载）</th>
+                </tr>
+                <?php foreach ($resources as $resource): ?>
+                    <tr>
+                        <td>
+                            <?php echo wp_strip_all_tags($resource['resource_desc']); ?>
+                            <?php
+                            if ($resource['resource_filesize']) {
+                                echo '（' . size_format($resource['resource_filesize']) . '）';
+                            }
+                            ?>
+                        </td>
+                        <td>
+                            |
+                            <?php foreach ($resource['resource_links'] as $link): ?>
+                                <a href="<?php echo $link['link'] ?>" target="_blank">
+                                    <?php
+                                    switch ($link['link_type']) {
+                                        case 'btsync':
+                                            echo 'BTSync';
+                                            break;
+                                        case 'magnet':
+                                            echo '磁力链';
+                                            break;
+                                        case 'ed2k':
+                                            echo '电驴';
+                                            break;
+                                        case 'baidu':
+                                            echo '百度云';
+                                            break;
+                                        case 'ctfile':
+                                            echo '诚通网盘';
+                                            break;
+                                        case '360':
+                                            echo '360云盘';
+                                            break;
+                                        default:
+                                            echo '其他';
+                                    }
+                                    ?>
+                                </a>
+                                <?php
+                                if ($link['link_desc']) {
+                                    echo '（' . wp_strip_all_tags($link['link_desc']) . '）';
+                                }
+                                ?>
+                                |
+                            <?php endforeach; ?>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+            <?php
+        endif;
+}

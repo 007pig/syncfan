@@ -11,12 +11,11 @@
 <?php
     if (has_category('电影')) {
         $nav_label = '电影';
-        $nav_color = '#1e73be';
     }
     else {
         $nav_label = '电视剧';
-        $nav_color = '#38b1f7';
     }
+    $nav_color = colormag_category_color(get_cat_ID($nav_label));
 ?>
 
 <h3 class="nav" style="border-bottom-color:<?=$nav_color?>;"><span style="background:<?=$nav_color?>;"><?=$nav_label?></span></h3>
@@ -149,48 +148,7 @@
 
     <div class="article-content clearfix">
 
-        <?php
-        $resources = get_field('resource');
-        if ($resources) :
-            ?>
-
-            <h5>资源下载</h5>
-
-            <p>强烈建议您使用 BTSync 下载，使用教程请点击这里。</p>
-
-            <table>
-                <tr>
-                    <th>资源类型</th>
-                    <th>下载链接（点击下载）</th>
-                </tr>
-                <?php foreach ($resources as $resource): ?>
-                    <tr>
-                        <td>
-                            <?php
-                            switch ($resource['resource_type']) {
-                                case 'btsync':
-                                    echo 'BTSync';
-                                    break;
-                                case 'magnet':
-                                    echo '磁力链';
-                                    break;
-                                case 'ed2k':
-                                    echo '电驴';
-                                    break;
-                            }
-                            ?>
-                        </td>
-                        <td>
-                            <a href="<?php echo $resource['resource_link'] ?>" target="_blank">
-                                <?php echo wp_strip_all_tags($resource['resource_desc']) ?>
-                            </a>
-                        </td>
-                    </tr>
-                <?php endforeach; ?>
-            </table>
-            <?php
-        endif;
-        ?>
+        <?php syncfan_show_download_resources(); ?>
 
         <h5>内容简介</h5>
 
