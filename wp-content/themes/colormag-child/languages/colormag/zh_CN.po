@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ColorMag\n"
 "POT-Creation-Date: 2016-05-26 21:58+0800\n"
-"PO-Revision-Date: 2016-05-30 00:25+0800\n"
+"PO-Revision-Date: 2016-05-30 21:48+0800\n"
 "Language-Team: ThemeGrill <themegrill@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: 404.php:22
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "哎...页面又挂了？！"
+msgstr "有点尴尬诶，该页无法显示。"
 
 #: 404.php:24
 msgid "It looks like nothing was found at this location. Try the search below."
@@ -77,7 +77,7 @@ msgstr "归档"
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
+msgstr[0] "《%2$s》有%s个想法"
 
 #: comments.php:38 comments.php:55
 msgid "Comment navigation"
@@ -249,57 +249,57 @@ msgstr "顶部图形显示位置"
 
 #: inc/customizer.php:247 inc/customizer.php:774
 msgid "Display the Header image just above the site title/text."
-msgstr ""
+msgstr "在站点标题上方显示顶部图像"
 
 #: inc/customizer.php:248 inc/customizer.php:775
 msgid ""
 "Default: Display the Header image between site title/text and the main/"
 "primary menu."
-msgstr ""
+msgstr "默认：在站点标题和主菜单之间显示顶部图像。"
 
 #: inc/customizer.php:249 inc/customizer.php:776
 msgid "Display the Header image below main/primary menu."
-msgstr ""
+msgstr "在主菜单下方显示顶部图像。"
 
 #: inc/customizer.php:261
 msgid "Check to make header image link back to home page"
-msgstr ""
+msgstr "勾选以便链接顶部图像至首页"
 
 #: inc/customizer.php:268
 msgid "Change the Design Settings from here as you want"
-msgstr ""
+msgstr "如有需要，请在这里修改设计界面"
 
 #: inc/customizer.php:270
 msgid "Design Options"
-msgstr ""
+msgstr "设计选项"
 
 #: inc/customizer.php:276
 msgid "Front Page Settings"
-msgstr ""
+msgstr "首页设定"
 
 #: inc/customizer.php:287
 msgid "Check to hide blog posts/static page on front page"
-msgstr ""
+msgstr "勾选以便隐藏首页的博客文章/统计页"
 
 #: inc/customizer.php:294
 msgid "Site Layout"
-msgstr ""
+msgstr "站点布局"
 
 #: inc/customizer.php:306
 msgid "Choose your site layout. The change is reflected in whole site"
-msgstr ""
+msgstr "请选择站点布局，这里的改动将会影响整个站点。"
 
 #: inc/customizer.php:308 inc/customizer.php:787
 msgid "Boxed Layout"
-msgstr ""
+msgstr "框式布局"
 
 #: inc/customizer.php:309 inc/customizer.php:788
 msgid "Wide Layout"
-msgstr ""
+msgstr "宽布局"
 
 #: inc/customizer.php:379
 msgid "Default layout"
-msgstr ""
+msgstr "默认布局"
 
 #: inc/customizer.php:391
 msgid ""
@@ -307,148 +307,155 @@ msgid ""
 "categories, search page etc. The layout for a single post and page can be "
 "controlled from below options"
 msgstr ""
+"请选择默认布局，这里的布局将会影响所有归档页、目录页、搜索页等等。单文章和单"
+"页面的布局可以通过下面的选项控制。"
 
 #: inc/customizer.php:405
 msgid "Default layout for pages only"
-msgstr ""
+msgstr "仅用于页面的默认布局"
 
 #: inc/customizer.php:417
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for specific page"
 msgstr ""
+"请选择页面的默认布局，这里的布局将会影响到所有页面，除非你为某个页面单独指定"
+"了特殊布局。"
 
 #: inc/customizer.php:431
 msgid "Default layout for single posts only"
-msgstr ""
+msgstr "仅用于文章的默认布局"
 
 #: inc/customizer.php:443
 msgid ""
 "Select default layout for single posts. This layout will be reflected in all "
 "single posts unless unique layout is set for specific post"
 msgstr ""
+"请选择文章的默认布局，这里的布局将会影响到所有文章，除非你为某篇文章单独指定"
+"了特殊布局。"
 
 #: inc/customizer.php:458
 msgid "Primary color option"
-msgstr ""
+msgstr "主色彩选项"
 
 #: inc/customizer.php:469
 msgid ""
 "This will reflect in links, buttons and many others. Choose a color to match "
 "your site"
 msgstr ""
+"这里的设定将会影响链接、按钮和其他类似地方。请为您的站点选择合适的色彩。"
 
 #: inc/customizer.php:492
 msgid "Custom CSS"
-msgstr ""
+msgstr "自定义CSS"
 
 #: inc/customizer.php:504
 msgid "Write your custom css"
-msgstr ""
+msgstr "编写自定义CSS"
 
 #: inc/customizer.php:513
 msgid "Social Options"
-msgstr ""
+msgstr "社交媒体选项"
 
 #: inc/customizer.php:514
 msgid "Change the Social Links Settings from here as you want"
-msgstr ""
+msgstr "如有需要，请在这里修改社交媒体链接设定"
 
 #: inc/customizer.php:520
 msgid "Activate social links area"
-msgstr ""
+msgstr "激活社交媒体链接区域"
 
 #: inc/customizer.php:532
 msgid "Check to activate social links area"
-msgstr ""
+msgstr "勾选以便激活社交媒体区域"
 
 #: inc/customizer.php:540 inc/header-functions.php:20
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
 #: inc/customizer.php:545 inc/header-functions.php:21
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: inc/customizer.php:550 inc/header-functions.php:22
 msgid "Google-Plus"
-msgstr ""
+msgstr "Google+"
 
 #: inc/customizer.php:555 inc/header-functions.php:23
 msgid "Instagram"
-msgstr ""
+msgstr "Instagram"
 
 #: inc/customizer.php:560 inc/header-functions.php:24
 msgid "Pinterest"
-msgstr ""
+msgstr "Pinterest"
 
 #: inc/customizer.php:565 inc/header-functions.php:25
 msgid "YouTube"
-msgstr ""
+msgstr "YouTube"
 
 #: inc/customizer.php:595
 msgid "Check to show in new tab"
-msgstr ""
+msgstr "勾选以便在新浏览器标签中显示"
 
 #: inc/customizer.php:609
 msgid "Change the Additional Settings from here as you want"
-msgstr ""
+msgstr "如有需要，请在这里修改附加设定"
 
 #: inc/customizer.php:611
 msgid "Additional Options"
-msgstr ""
+msgstr "附加选项"
 
 #: inc/customizer.php:617
 msgid "Activate favicon"
-msgstr ""
+msgstr "激活Favicon"
 
 #: inc/customizer.php:629
 msgid "Check to activate favicon. Upload favicon from below option"
-msgstr ""
+msgstr "勾选以便激活Favicon。在下面上传Favicon"
 
 #: inc/customizer.php:641
 msgid "Upload favicon for your site"
-msgstr ""
+msgstr "上传你的Favicon"
 
 #: inc/customizer.php:649
 msgid "Related Posts"
-msgstr ""
+msgstr "相关文章"
 
 #: inc/customizer.php:661
 msgid "Check to activate the related posts"
-msgstr ""
+msgstr "勾选以便激活相关文章"
 
 #: inc/customizer.php:674
 msgid "Related Posts Must Be Shown As:"
-msgstr ""
+msgstr "相关文章必须按照以下方式显示："
 
 #: inc/customizer.php:678 inc/customizer.php:748
 msgid "Related Posts By Categories"
-msgstr ""
+msgstr "按文章分类显示相关文章"
 
 #: inc/customizer.php:679 inc/customizer.php:749
 msgid "Related Posts By Tags"
-msgstr ""
+msgstr "按标签显示相关文章"
 
 #: inc/customizer.php:686
 msgid "Image Lightbox"
-msgstr ""
+msgstr "图像幻灯片效果"
 
 #: inc/customizer.php:698
 msgid "Check to enable the lightbox for the featured images in single post"
-msgstr ""
+msgstr "勾选以便启用特色图片的幻灯片效果"
 
 #: inc/customizer.php:707
 msgid "Category Color Options"
-msgstr ""
+msgstr "分类颜色选项"
 
 #: inc/customizer.php:709
 msgid "Change the color of each category items as you want."
-msgstr ""
+msgstr "如有需要，请在这里修改每个分类项目的颜色。"
 
 #: inc/customizer.php:714
 msgid "Category Color Settings"
-msgstr ""
+msgstr "分类颜色设定"
 
 #: inc/customizer.php:736
 #, php-format
@@ -457,11 +464,11 @@ msgstr ""
 
 #: inc/customizer.php:852
 msgid "Theme Info"
-msgstr ""
+msgstr "主题信息"
 
 #: inc/customizer.php:853
 msgid "View PRO version"
-msgstr ""
+msgstr "查看专业版（PRO）"
 
 #: inc/functions.php:252 inc/related-posts.php:33 inc/widgets/widgets.php:313
 #: inc/widgets/widgets.php:439 inc/widgets/widgets.php:590
@@ -490,11 +497,11 @@ msgstr ""
 
 #: inc/functions.php:267
 msgid "Edit"
-msgstr ""
+msgstr "编辑"
 
 #: inc/functions.php:361
 msgid "Post navigation"
-msgstr ""
+msgstr "文章导航"
 
 #: inc/functions.php:365 navigation.php:44
 msgctxt "Previous post link"
@@ -508,11 +515,11 @@ msgstr ""
 
 #: inc/functions.php:371
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr ""
+msgstr "<span class=\"meta-nav\">&larr;</span>较旧文章"
 
 #: inc/functions.php:375
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
+msgstr "较新文章<span class=\"meta-nav\">&rarr;</span>"
 
 #: inc/functions.php:401
 msgid "Pingback:"
@@ -520,24 +527,24 @@ msgstr ""
 
 #: inc/functions.php:401
 msgid "(Edit)"
-msgstr ""
+msgstr "(编辑)"
 
 #: inc/functions.php:416
 msgid "Post author"
-msgstr ""
+msgstr "文章作者"
 
 #: inc/functions.php:419
 #, php-format
 msgid "%1$s at %2$s"
-msgstr ""
+msgstr "%1$s 于 %2$s"
 
 #: inc/functions.php:427
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "您的评论正在等待审核。"
 
 #: inc/functions.php:432
 msgid "Reply"
-msgstr ""
+msgstr "恢复"
 
 #: inc/functions.php:452
 msgid "WordPress"
@@ -568,295 +575,295 @@ msgstr "最新更新："
 
 #: inc/functions.php:541
 msgid "View a random post"
-msgstr ""
+msgstr "查看随机文章"
 
 #: inc/related-posts.php:5
 msgid "You May Also Like"
-msgstr ""
+msgstr "您可能喜欢"
 
 #: inc/widgets/widgets.php:23
 msgid "Shows widgets at Right side."
-msgstr ""
+msgstr "右侧显示组件。"
 
 #: inc/widgets/widgets.php:34
 msgid "Shows widgets at Left side."
-msgstr ""
+msgstr "左侧显示组件。"
 
 #: inc/widgets/widgets.php:43
 msgid "Header Sidebar"
-msgstr ""
+msgstr "顶部侧栏"
 
 #: inc/widgets/widgets.php:45
 msgid "Shows widgets in header section just above the main navigation menu."
-msgstr ""
+msgstr "在顶部主导航菜单上方显示组件。"
 
 #: inc/widgets/widgets.php:54
 msgid "Front Page: Slider Area"
-msgstr ""
+msgstr "首页：轮播区域"
 
 #: inc/widgets/widgets.php:56
 msgid "Show widget just below menu. Suitable for TG: Featured Cat Slider."
-msgstr ""
+msgstr "在菜单上方显示组件。适用于TG：特色分类轮播。"
 
 #: inc/widgets/widgets.php:65
 msgid "Front Page: Area beside slider"
-msgstr ""
+msgstr "首页：轮播区域旁边"
 
 #: inc/widgets/widgets.php:67
 msgid "Show widget beside the slider. Suitable for TG: Highlighted Posts."
-msgstr ""
+msgstr "在轮播区域旁边显示组件。适用于TG：高亮文章。"
 
 #: inc/widgets/widgets.php:76
 msgid "Front Page: Content Top Section"
-msgstr ""
+msgstr "首页：内容顶部区域"
 
 #: inc/widgets/widgets.php:78
 msgid "Content Top Section"
-msgstr ""
+msgstr "内容顶部区域"
 
 #: inc/widgets/widgets.php:87
 msgid "Front Page: Content Middle Left Section"
-msgstr ""
+msgstr "首页：内容中间偏左区域"
 
 #: inc/widgets/widgets.php:89
 msgid "Content Middle Left Section"
-msgstr ""
+msgstr "内容中间偏左区域"
 
 #: inc/widgets/widgets.php:98
 msgid "Front Page: Content Middle Right Section"
-msgstr ""
+msgstr "首页：内容中间偏右区域"
 
 #: inc/widgets/widgets.php:100
 msgid "Content Middle Right Section"
-msgstr ""
+msgstr "内容中间偏右区域"
 
 #: inc/widgets/widgets.php:109
 msgid "Front Page: Content Bottom Section"
-msgstr ""
+msgstr "首页：内容底部区域"
 
 #: inc/widgets/widgets.php:111
 msgid "Content Middle Bottom Section"
-msgstr ""
+msgstr "内容中间底部位置"
 
 #: inc/widgets/widgets.php:120
 msgid "Contact Page Sidebar"
-msgstr ""
+msgstr "联系页面侧栏"
 
 #: inc/widgets/widgets.php:122
 msgid "Shows widgets on Contact Page Template."
-msgstr ""
+msgstr "在联系页面模板中显示组件。"
 
 #: inc/widgets/widgets.php:131
 msgid "Error 404 Page Sidebar"
-msgstr ""
+msgstr "404错误页面侧栏"
 
 #: inc/widgets/widgets.php:133
 msgid "Shows widgets on Error 404 page."
-msgstr ""
+msgstr "在404错误页面显示组件。"
 
 #: inc/widgets/widgets.php:142
 msgid "Advertisement Above The Footer"
-msgstr ""
+msgstr "页脚上方广告"
 
 #: inc/widgets/widgets.php:144
 msgid "Shows widgets Just Above The Footer, suitable for TG: 728x90 widget."
-msgstr ""
+msgstr "在页脚上方显示组件，适用于TG：728x90组件"
 
 #: inc/widgets/widgets.php:153
 msgid "Footer Sidebar One"
-msgstr ""
+msgstr "页脚侧栏一"
 
 #: inc/widgets/widgets.php:155
 msgid "Shows widgets at footer sidebar one."
-msgstr ""
+msgstr "在页脚侧栏一显示组件。"
 
 #: inc/widgets/widgets.php:164
 msgid "Footer Sidebar Two"
-msgstr ""
+msgstr "页脚侧栏二"
 
 #: inc/widgets/widgets.php:166
 msgid "Shows widgets at footer sidebar two."
-msgstr ""
+msgstr "在页脚侧栏二显示组件。"
 
 #: inc/widgets/widgets.php:175
 msgid "Footer Sidebar Three"
-msgstr ""
+msgstr "页脚侧栏三"
 
 #: inc/widgets/widgets.php:177
 msgid "Shows widgets at footer sidebar three."
-msgstr ""
+msgstr "在页脚侧栏三显示组件。"
 
 #: inc/widgets/widgets.php:186
 msgid "Footer Sidebar Four"
-msgstr ""
+msgstr "页脚侧栏四。"
 
 #: inc/widgets/widgets.php:188
 msgid "Shows widgets at footer sidebar four."
-msgstr ""
+msgstr "在页脚侧栏四显示组件。"
 
 #: inc/widgets/widgets.php:212
 msgid ""
 "Display latest posts or posts of specific category, which will be used as "
 "the slider."
-msgstr ""
+msgstr "显示最新文章或特定分类的文章，将被用于轮播。"
 
 #: inc/widgets/widgets.php:214
 msgid "TG: Featured Category Slider"
-msgstr ""
+msgstr "TG：特色分类轮播"
 
 #: inc/widgets/widgets.php:227 inc/widgets/widgets.php:357
 #: inc/widgets/widgets.php:495 inc/widgets/widgets.php:653
 msgid "Number of posts to display:"
-msgstr ""
+msgstr "显示文章数量："
 
 #: inc/widgets/widgets.php:231 inc/widgets/widgets.php:361
 #: inc/widgets/widgets.php:499 inc/widgets/widgets.php:657
 msgid "Show latest Posts"
-msgstr ""
+msgstr "显示最新文章"
 
 #: inc/widgets/widgets.php:232 inc/widgets/widgets.php:362
 #: inc/widgets/widgets.php:500 inc/widgets/widgets.php:658
 msgid "Show posts from a category"
-msgstr ""
+msgstr "显示来自特定分类的文章"
 
 #: inc/widgets/widgets.php:235 inc/widgets/widgets.php:365
 #: inc/widgets/widgets.php:503 inc/widgets/widgets.php:661
 msgid "Select category"
-msgstr ""
+msgstr "选择分类"
 
 #: inc/widgets/widgets.php:342
 msgid ""
 "Display latest posts or posts of specific category. Suitable for the Area "
 "Beside Slider Sidebar."
-msgstr ""
+msgstr "显示最新文章或特定分类的文章，适用于轮播侧栏旁边的区域。"
 
 #: inc/widgets/widgets.php:344
 msgid "TG: Highligted Posts"
-msgstr ""
+msgstr "TG：高亮文章"
 
 #: inc/widgets/widgets.php:468 inc/widgets/widgets.php:626
 msgid "Display latest posts or posts of specific category."
-msgstr ""
+msgstr "显示最新文章或特定分类的文章。"
 
 #: inc/widgets/widgets.php:470
 msgid "TG: Featured Posts (Style 1)"
-msgstr ""
+msgstr "TG：特色文章（风格1）"
 
 #: inc/widgets/widgets.php:486 inc/widgets/widgets.php:644
 msgid "Layout will be as below:"
-msgstr ""
+msgstr "布局如下："
 
 #: inc/widgets/widgets.php:489 inc/widgets/widgets.php:647
 #: inc/widgets/widgets.php:804 inc/widgets/widgets.php:905
 #: inc/widgets/widgets.php:1007
 msgid "Title:"
-msgstr ""
+msgstr "标题："
 
 #: inc/widgets/widgets.php:492 inc/widgets/widgets.php:650
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: inc/widgets/widgets.php:628
 msgid "TG: Featured Posts (Style 2)"
-msgstr ""
+msgstr "TG：特色文章（风格2）"
 
 #: inc/widgets/widgets.php:786
 msgid "Add your 300x250 Advertisement here"
-msgstr ""
+msgstr "在这里添加 300x250 广告"
 
 #: inc/widgets/widgets.php:788
 msgid "TG: 300x250 Advertisement"
-msgstr ""
+msgstr "TG： 300x250 广告"
 
 #: inc/widgets/widgets.php:807
 msgid "Add your Advertisement 300x250 Images Here"
-msgstr ""
+msgstr "在这里添加300x250图片"
 
 #: inc/widgets/widgets.php:809 inc/widgets/widgets.php:910
 #: inc/widgets/widgets.php:1017
 msgid "Advertisement Image Link "
-msgstr ""
+msgstr "广告图片链接"
 
 #: inc/widgets/widgets.php:813 inc/widgets/widgets.php:914
 #: inc/widgets/widgets.php:1021
 msgid "Advertisement Image "
-msgstr ""
+msgstr "广告图片"
 
 #: inc/widgets/widgets.php:823 inc/widgets/widgets.php:924
 #: inc/widgets/widgets.php:1031
 msgid "Upload Image"
-msgstr ""
+msgstr "上传图片"
 
 #: inc/widgets/widgets.php:887
 msgid "Add your 728x90 Advertisement here"
-msgstr ""
+msgstr "在这里添加 728x90 广告"
 
 #: inc/widgets/widgets.php:889
 msgid "TG: 728x90 Advertisement"
-msgstr ""
+msgstr "TG： 728x90 广告"
 
 #: inc/widgets/widgets.php:908
 msgid "Add your Advertisement 728x90 Images Here"
-msgstr ""
+msgstr "在这里添加 728x90 图片"
 
 #: inc/widgets/widgets.php:989
 msgid "Add your 125x125 Advertisement here"
-msgstr ""
+msgstr "在这里添加 125x125 广告"
 
 #: inc/widgets/widgets.php:991
 msgid "TG: 125x125 Advertisement"
-msgstr ""
+msgstr "TG： 125x125 广告"
 
 #: inc/widgets/widgets.php:1010
 msgid "Add your Advertisement 125x125 Images Here"
-msgstr ""
+msgstr "在这里添加 125x125 图片"
 
 #: navigation.php:24 navigation.php:36
 msgid "&larr; Previous"
-msgstr ""
+msgstr "&larr; 上一"
 
 #: navigation.php:25 navigation.php:37
 msgid "Next &rarr;"
-msgstr ""
+msgstr "下一 &rarr;"
 
 #: no-results.php:18
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
+msgstr "准备好发布第一篇文章？<a href=\"%1$s\">点这里开始</a>."
 
 #: no-results.php:22
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
-msgstr ""
+msgstr "抱歉，没有符合您搜索条件的结果。请换其它关键词再试。"
 
 #: no-results.php:27
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
+msgstr "我们可能无法找到您需要的内容。或许搜索功能可以帮到您。"
 
 #: search.php:20
 #, php-format
 msgid "Search Results for: %s"
-msgstr ""
+msgstr " %s 的搜索结果"
 
 #: searchform.php:12
 msgid "Search"
-msgstr ""
+msgstr "搜索"
 
 #: sidebar-left.php:24 sidebar.php:24
 msgid "Contact Page"
-msgstr ""
+msgstr "联系页面"
 
 #: sidebar-left.php:26
 msgid "Left"
-msgstr ""
+msgstr "左"
 
 #: sidebar-left.php:30 sidebar.php:30
 msgid "Example Widget"
-msgstr ""
+msgstr "示例组件"
 
 #: sidebar-left.php:31 sidebar.php:31
 #, php-format
@@ -865,7 +872,9 @@ msgid ""
 "can add custom widgets from the %swidgets screen%s in the admin. If custom "
 "widgets is added than this will be replaced by those widgets."
 msgstr ""
+"这是一个示例组件，用于显示 %s 侧栏的默认外观。你可以从后台的%swidgets screen"
+"%s增加自定义组件。如果增加了自定义组件，这里的组件会被替换掉。"
 
 #: sidebar.php:26
 msgid "Right"
-msgstr ""
+msgstr "右"
