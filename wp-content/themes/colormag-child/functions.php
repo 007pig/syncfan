@@ -35,6 +35,14 @@ add_image_size( 'syncfan-featured-image-movie', 350, 493, true );
 add_image_size( 'syncfan-movie-screenshot', 0, 200, true );
 add_image_size( 'syncfan-featured-image', 800, 445, true );
 
+// custom url rewrite
+function custom_rewrite_basic() {
+    add_rewrite_rule('^movies/?', 'index.php?post_type=movie&category_name=movie', 'top');
+    add_rewrite_rule('^tv/?', 'index.php?post_type=movie&category_name=tv', 'top');
+}
+add_action('init', 'custom_rewrite_basic');
+
+
 /**
  * ACF Bidirectional Relationships
  *
