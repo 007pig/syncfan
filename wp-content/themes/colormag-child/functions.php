@@ -565,6 +565,9 @@ function syncfan_show_download_resources() {
                                 ?>
                                 |
                             <?php endforeach; ?>
+                            <?php if ($resource['resource_subtitle_link']) :?>
+                                <a href="<?php echo $resource['resource_subtitle_link'];?>" target="_blank">中文字幕</a> |
+                            <?php endif; ?>
                         </td>
                     </tr>
                 <?php endforeach; ?>
