@@ -19,7 +19,11 @@ del, dfn, em, font, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+table, caption, tbody, tfoot, thead, tr, th, td,
+button, input, select, textarea,
+blockquote p, #site-description, .main-navigation li,
+.site-header .menu-toggle
+{
     font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
