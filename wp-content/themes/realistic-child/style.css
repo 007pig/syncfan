@@ -1,0 +1,52 @@
+/*
+ Theme Name:   SyncFan Realistic
+ Theme URI:    http://syncfan.com
+ Description:  SyncFan Theme based on Realistic
+ Author:       xiaoyu
+ Author URI:   http://syncfan.com
+ Template:     realistic
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: Blue, Red, Purple, two-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-menu, editor-style, featured-images, microformats, post-formats, sticky-post, threaded-comments, translation-ready
+ Text Domain:  realistic-child
+*/
+
+h5 {
+    font-size: 24px;
+    margin: 30px 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+article {
+    padding: 20px;
+}
+
+table {
+
+}
+
+/* Movie */
+.single-movie article header .year {
+    font-size: 36px;
+    color: #888;
+}
+
+.single-movie article .featured-image {
+    float: left;
+}
+
+.single-movie article .movie-metadata {
+    float: left;
+    width: 410px;
+    margin-left: 10px;
+}
+
+.single-movie article .movie-metadata td:first-child {
+    width: 90px;
+    text-align: right;
+    padding-right: 10px;
+}
