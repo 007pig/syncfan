@@ -5,10 +5,13 @@ const POST_LIKE_POSTTYPES = ['post', 'movie', 'tv', 'software'];
 // Load parent css
 add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-});
 
-// Load language file
+    // remove google font css
+    wp_dequeue_style('colormag_google_fonts');
+}, 11);
+
 add_action( 'after_setup_theme', function () {
+    // Load language file
     // load custom translation file for the parent theme
     load_theme_textdomain( 'colormag', get_stylesheet_directory() . '/languages/colormag' );
     // load translation file for the child theme
