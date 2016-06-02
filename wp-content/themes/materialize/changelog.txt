@@ -1,0 +1,10 @@
+version 0.0.9 ( May 19, 2016 )
+-------------------------------------------------------
+- Buttons Improvements
+- Header Image Improvements
+- Page Content Improvements
+
+version 0.0.8 ( April 20, 2016 )
+-------------------------------------------------------
+- Forms and Inputs Improvements
+- Header Image Improvements
