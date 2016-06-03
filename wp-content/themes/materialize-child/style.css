@@ -1,0 +1,86 @@
+/*
+ Theme Name:   SyncFan Materialize
+ Theme URI:    http://syncfan.com
+ Description:  SyncFan Theme based on Materialize
+ Author:       xiaoyu
+ Author URI:   http://syncfan.com
+ Template:     materialize
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:  black, silver, light, white, red, green, three-columns, two-columns, one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, flexible-header, featured-images, sticky-post, theme-options, translation-ready, custom-colors, custom-menu, featured-image-header, threaded-comments, custom-background, custom-header
+ Text Domain:  materialize-child
+*/
+
+/**************************/
+/* Header                 */
+/**************************/
+
+header {
+    height: 75px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.nav-wrapper {
+    width: 100%;
+    padding-top: 5px;
+}
+
+nav .button-collapse {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    nav.mythemes-topper a.button-collapse, nav.mythemes-topper a.button-collapse i, nav.mythemes-topper a.button-collapse i:before {
+        color: #fff;
+    }
+}
+
+nav.mythemes-topper div.mythemes-blog-identity {
+    display: inline-block;
+    padding: 0;
+    border: none;
+}
+
+div.nav-wrapper div.not-collapsed-wrapper {
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 0 0 5px 20px;
+}
+
+nav.mythemes-topper div.mythemes-blog-identity a.mythemes-blog-title {
+    color: #fff;
+}
+
+nav.mythemes-topper div.mythemes-blog-identity a.mythemes-blog-description {
+    margin-top: 0;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+@media (min-width: 994px) {
+    nav.mythemes-topper ul li a {
+        color: #fff;
+    }
+    nav.mythemes-topper ul li:hover > a, nav.mythemes-topper ul li a:hover {
+        color: #fff;
+    }
+    nav.mythemes-topper div.not-collapsed-wrapper ul li.current-menu-ancestor, nav.mythemes-topper div.not-collapsed-wrapper ul li.current-menu-item, nav.mythemes-topper div.not-collapsed-wrapper ul li.current-menu-ancestor:hover, nav.mythemes-topper div.not-collapsed-wrapper ul li.current-menu-item:hover {
+        background-color: #e53935;
+    }
+}
+
+/**************************/
+/* Content                */
+/**************************/
+
+.content {
+    padding-top: 30px;
+}
+
+.content .container {
+    width: 95%;
+}
