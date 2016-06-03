@@ -21,6 +21,7 @@
             ?>
 
             <time datetime="<?php echo esc_attr( $t_time ); ?>"><i class="mythemes-icon-calendar"></i><?php echo $u_time; ?></time>
+
             <!-- comments -->
             <?php
             if( $post -> comment_status == 'open' ) {
@@ -31,6 +32,24 @@
                 echo '</a>';
             }
             ?>
+            
+            <!-- terms -->
+            <?php
+            $post_type = get_post_type();
+            if ($post_type != 'post' && in_array($post_type, POST_LIKE_POSTTYPES)): ?>
+            <i class="mythemes-icon-folder-1"></i>
+            <?php
+            switch ($post_type) {
+                case 'movie':
+                    syncfan_term('movie_type');
+                    break;
+                case 'software':
+                    syncfan_term('software_type');
+                    syncfan_term('platform');
+                    break;
+            }
+            ?>
+            <?php endif; ?>
 
             <div class="clear"></div>
 

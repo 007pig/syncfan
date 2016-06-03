@@ -11,6 +11,13 @@ add_action('wp_enqueue_scripts', function () {
         array($parent_style)
     );
 
+    wp_deregister_style('mythemes-google-fonts');
+
+    $poiret_one = 'Poiret+One';
+    $raleway    = 'Raleway:400,100,200,300,500,600,700,800,900';
+    $open_sans  = 'Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300&subset=latin,cyrillic-ext,latin-ext,cyrillic,greek-ext,greek,vietnamese';
+    wp_register_style('mythemes-google-fonts', '//fonts.gmirror.org/css?family=' . esc_attr( $poiret_one ) . '|' . esc_attr( $raleway ) . '|' . esc_attr( $open_sans ) );
+
 }, 11);
 
 add_action('after_setup_theme', function () {
@@ -29,13 +36,32 @@ add_filter('pre_get_posts', function ($query) {
     return $query;
 });
 
-add_image_size( 'syncfan-featured-image-in-list', 200, 200, true );
+add_image_size( 'syncfan-featured-image-in-list', 200, 0, true );
 
 add_action('init', function() {
     // custom url rewrite
     add_rewrite_rule('^movies/?', 'index.php?post_type=movie&category_name=movie', 'top');
     add_rewrite_rule('^tv/?', 'index.php?post_type=movie&category_name=tv', 'top');
 });
+
+
+/**
+ * Show term
+ */
+function syncfan_term($term_name) {
+    global $post;
+    $categories = get_the_terms( false, $term_name );
+    $separator = '&nbsp;';
+    $output = '';
+    if($categories) {
+        $output .= '<span class="cat-links">';
+        foreach($categories as $category) {
+            $output .= '<a href="'.get_term_link( $category->term_id ).'"  rel="category tag">'.$category->name.'</a>'.$separator;
+        }
+        $output .='</span>';
+        echo trim($output, $separator);
+    }
+}
 
 
 /**

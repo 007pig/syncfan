@@ -31,7 +31,17 @@
             <h2 class="post-title">
                 <?php if( !empty( $post -> post_title ) ) { ?>
 
-                    <a href="<?php the_permalink() ?>" title="<?php echo mythemes_post::title( $post -> ID, true ); ?>"><?php the_title(); ?></a>
+                    <a href="<?php the_permalink() ?>" title="<?php echo mythemes_post::title( $post -> ID, true ); ?>">
+                        <?php if (get_post_type() == 'movie') the_field('movie_name_chinese'); ?>
+
+                        <?php the_title(); ?>
+
+                        <?php if (get_post_type() == 'movie'): ?>
+                        <span class="year">(<?php the_field('movie_year'); ?>)</span>
+                        <?php endif; ?>
+
+                        <?php if (get_post_type() == 'software') the_field('software_version'); ?>
+                    </a>
 
                 <?php } else { ?>
 
