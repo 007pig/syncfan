@@ -29,8 +29,7 @@ add_filter('pre_get_posts', function ($query) {
     return $query;
 });
 
-add_image_size( 'syncfan-featured-image-movie', 250, 0, false );
-add_image_size( 'syncfan-movie-screenshot', 0, 200, true );
+add_image_size( 'syncfan-featured-image-in-list', 200, 200, true );
 
 add_action('init', function() {
     // custom url rewrite
