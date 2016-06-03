@@ -84,3 +84,98 @@ nav.mythemes-topper div.mythemes-blog-identity a.mythemes-blog-description {
 .content .container {
     width: 95%;
 }
+
+article {
+    position: relative;
+}
+
+article div.meta time {
+    display: inline;
+}
+
+article ul.post-categories{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+article ul.post-categories li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+article ul.post-categories li a{
+    display: inline-block;
+    background-color: #4db6ac;
+    color: #ffffff;
+
+    padding: 0 12px;
+    vertical-align: inherit;
+    margin: 0;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-tap-highlight-color: transparent;
+
+    z-index: 1;
+
+    will-change: opacity, transform;
+
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+article ul.post-categories li a:hover{
+    background-color: #26a69a;
+    color: #ffffff;
+
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+article ul.post-categories li a:before{
+    content: '\ef65';
+    margin-right: 9px;
+    font-family: "fontello";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    float: left;
+    speak: none;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+}
+
+body.single section article, .mythemes-classic > article {
+    padding: 15px 30px;
+}
+
+article .post-thumbnail {
+    margin-bottom: 0;
+}
+
+article div.post-content {
+    padding-top: 0;
+}
+
+.mythemes-classic .post-thumbnail:hover {
+    background-color: inherit;
+}
+
+article a.more-link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

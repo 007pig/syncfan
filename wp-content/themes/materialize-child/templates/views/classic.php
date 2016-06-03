@@ -15,6 +15,8 @@
     <!-- post content wrapper -->
     <article <?php post_class('row'); ?>>
 
+        <?php the_category(); ?>
+
         <div class="post-thumbnail col s3">
             <a href="<?php echo get_permalink( $post -> ID ); ?>">
             <?php
@@ -63,15 +65,16 @@
                     // show the excerpt ( if exists )
                     if( !empty( $post -> post_excerpt ) ){
                         the_excerpt();
-                        echo '<a href="' . get_permalink( $post -> ID ) . '" class="more-link">';
-                        echo $read_more_link;
-                        echo '</a>';
                     }
 
                     // show the content
                     else{
-                        the_content( $read_more_link );
+                        the_content();
                     }
+
+                    echo '<a href="' . get_permalink( $post -> ID ) . '" class="more-link waves-effect waves-light green white-text">';
+                    echo $read_more_link;
+                    echo '&nbsp;&nbsp;<i class="mythemes-icon-right-big"></i></a>';
                 ?>
 
                 <div class="clearfix"></div>
