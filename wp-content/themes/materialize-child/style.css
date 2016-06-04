@@ -173,6 +173,7 @@ body.single section article, .mythemes-classic > article {
 
 article .post-thumbnail {
     margin-bottom: 0;
+    max-height: none;
 }
 
 article .post-thumbnail img {
@@ -196,4 +197,40 @@ article a.more-link {
 article div.meta .cat-links a {
     padding-left: 2px;
     padding-right: 2px;
+}
+
+div.mythemes-page-header {
+    margin-bottom: 20px;
+
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+/**************************/
+/* Movie                  */
+/**************************/
+ul.movie-screenshot-container {
+    padding: 0;
+}
+
+ul.movie-screenshot-container li {
+    list-style-type: none;
+}
+
+.movie-meta table {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.movie-meta table td {
+    border: none;
+}
+
+.movie-meta table td:first-child {
+    text-align: right;
+    white-space: nowrap;
+    vertical-align: top;
 }

@@ -36,6 +36,8 @@ add_filter('pre_get_posts', function ($query) {
     return $query;
 });
 
+add_image_size( 'syncfan-featured-image-movie', 350, 493, true );
+add_image_size( 'syncfan-movie-screenshot', 900, 0, true );
 add_image_size( 'syncfan-featured-image-in-list', 200, 0, true );
 
 add_action('init', function() {
