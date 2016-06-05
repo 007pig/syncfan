@@ -23,9 +23,9 @@ add_action('wp_enqueue_scripts', function () {
 add_action('after_setup_theme', function () {
     // Load language file
     // load custom translation file for the parent theme
-    load_theme_textdomain('realistic', get_stylesheet_directory() . '/languages/realistic');
+    load_theme_textdomain('materialize', get_stylesheet_directory() . '/languages/materialize');
     // load translation file for the child theme
-    load_child_theme_textdomain('realistic-child', get_stylesheet_directory() . '/languages');
+    load_child_theme_textdomain('materialize-child', get_stylesheet_directory() . '/languages');
 
 });
 
