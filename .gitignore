@@ -2,6 +2,8 @@
 
 .well-known/
 
+.DS_Store
+syncfan.iml
 
 *.log
 wp-config.php

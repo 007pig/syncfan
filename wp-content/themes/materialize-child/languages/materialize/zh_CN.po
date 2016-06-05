@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Materialize\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Thu May 19 2016 13:24:03 GMT+0300 (EEST)\n"
-"PO-Revision-Date: 2016-06-03 09:57+0800\n"
+"PO-Revision-Date: 2016-06-05 23:14+0800\n"
 "Last-Translator: Alexandru Spectrum <alexandru.popescu86@mythem.es>\n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -19,121 +19,121 @@ msgstr ""
 "esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;esc_html_x:1,2c;"
 "comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Loco-Target-Locale: en_US\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: /404.php:39
 #, php-format
 msgid "Error %s"
-msgstr ""
+msgstr "错误 %s"
 
 #: /404.php:63
 msgid "Resource not found"
-msgstr ""
+msgstr "资源未找到"
 
 #: /404.php:64 /front-page.php:148
 msgid ""
 "We apologize but this page, post or resource does not exist or can not be found."
-msgstr ""
+msgstr "非常抱歉，未能找到您请求的资源。"
 
 #: /archive.php:49 /archive.php:62
 #, php-format
 msgid "Yearly archives - %s"
-msgstr ""
+msgstr "按年归档 - %s"
 
 #: /archive.php:50
 #, php-format
 msgid "Monthly archives - %s"
-msgstr ""
+msgstr "按月归档 - %s"
 
 #: /archive.php:53
 msgid "Daily Archives"
-msgstr ""
+msgstr "按日归档:"
 
 #: /archive.php:65
 msgid "Monthly Archives"
-msgstr ""
+msgstr "按月归档"
 
 #: /archive.php:74
 msgid "Yearly Archives"
-msgstr ""
+msgstr "按年存档"
 
 #: /archive.php:80
 msgid "Archives"
-msgstr ""
+msgstr "归档"
 
 #: /author.php:32
 msgid "Author"
-msgstr ""
+msgstr "作者"
 
 #: /category.php:43
 msgid "Category Archives"
-msgstr ""
+msgstr "资源列表"
 
 #: /comments.php:31
 msgid "This post is password protected. Enter the password to view any comments."
-msgstr ""
+msgstr "这篇文章有密码保护，只有输入密码才能查看。"
 
 #: /comments.php:43
 #, php-format
 msgctxt "Title before comment(s) list"
 msgid "Comment ( %s )"
 msgid_plural "Comments ( %s )"
-msgstr[0] ""
+msgstr[0] "评论 ( %s )"
 
 #: /comments.php:60 /templates/pagination.php:38
 #, php-format
 msgid "%s Prev"
-msgstr ""
+msgstr "%s 往前"
 
 #: /comments.php:61 /templates/pagination.php:39
 #, php-format
 msgid "Next %s"
-msgstr ""
+msgstr "往后 %s"
 
 #: /comments.php:83 /comments.php:100
 msgid "Nickname ( required )"
-msgstr ""
+msgstr "昵称（必须）"
 
 #: /comments.php:88 /comments.php:104
 msgid "E-mail ( required )"
-msgstr ""
+msgstr "E-mail（必须）"
 
 #: /comments.php:93 /comments.php:108
 msgid "Website"
-msgstr ""
+msgstr "网站"
 
 #: /comments.php:114
 msgid "THE COMMENT BODY"
-msgstr ""
+msgstr "评论正文"
 
 #: /comments.php:121
 msgid "You may use these HTML tags and attributes"
-msgstr ""
+msgstr "你可以使用下面这些HTML标签和属性"
 
 #: /comments.php:130
 msgid "Leave a reply"
-msgstr ""
+msgstr "留下评论"
 
 #: /comments.php:132 /comments.php:133 /comments.php:136
 msgid "Comment"
-msgstr ""
+msgstr "发表"
 
 #: /comments.php:132
 msgid "Your email address will not be published."
-msgstr ""
+msgstr "你的email地址不会被显示出来。"
 
 #: /comments.php:133
 msgid "Logged in as"
-msgstr ""
+msgstr "登录为"
 
 #: /comments.php:133
 msgid "Log out of this account"
-msgstr ""
+msgstr "登出本账号"
 
 #: /comments.php:133
 msgid "Log out?"
-msgstr ""
+msgstr "登出？"
 
 #: /footer.php:240
 #, php-format
@@ -147,28 +147,28 @@ msgstr ""
 
 #: /front-page.php:132 /page.php:122 /single.php:139
 msgid "Pages"
-msgstr ""
+msgstr "页面"
 
 #: /front-page.php:147
 msgid "Page not found"
-msgstr ""
+msgstr "找不到页面"
 
 #: /functions.php:83 /cfg/customize.php:822
 msgid "Default"
-msgstr ""
+msgstr "默认"
 
 #: /index.php:45 /cfg/customize.php:711
 msgid "Blog"
-msgstr ""
+msgstr "博客"
 
 #: /search.php:40
 #, php-format
 msgid "Search results for \"%s\""
-msgstr ""
+msgstr "“%s”的搜索结果"
 
 #: /searchform.php:18
 msgid "type here..."
-msgstr ""
+msgstr "在这里输入......"
 
 #: /sidebar-footer-first.php:29
 msgid "Materialize"
@@ -179,19 +179,19 @@ msgstr ""
 msgid ""
 "It is a clean white WordPress theme %s with creative material design and %s "
 "responsive layout."
-msgstr ""
+msgstr "一个干净整洁的WordPress主题 %s ，具有创新的素材设计和 %s 响应式布局。"
 
 #: /sidebar-footer-fourth.php:29 /sidebar-special-page.php:40
 msgid "Working Hours"
-msgstr ""
+msgstr "工作时间"
 
 #: /sidebar-footer-fourth.php:31 /sidebar-special-page.php:43
 msgid "Monday to Friday"
-msgstr ""
+msgstr "周一到周五"
 
 #: /sidebar-footer-second.php:29 /sidebar-special-page.php:49
 msgid "Address"
-msgstr ""
+msgstr "地址"
 
 #: /sidebar-footer-second.php:30
 #, php-format
@@ -200,7 +200,7 @@ msgstr ""
 
 #: /sidebar-footer-third.php:29
 msgid "Contact"
-msgstr ""
+msgstr "联系方式"
 
 #: /sidebar-footer-third.php:31 /sidebar-special-page.php:33
 #, php-format
@@ -219,7 +219,7 @@ msgstr ""
 
 #: /sidebar-page.php:36
 msgid "Default Content"
-msgstr ""
+msgstr "默认内容"
 
 #: /sidebar-page.php:38
 msgid ""
@@ -230,54 +230,54 @@ msgstr ""
 
 #: /sidebar-post.php:48 /cfg/widgets/mythemes.post_meta.class.php:48
 msgid "Edit"
-msgstr ""
+msgstr "编辑"
 
 #: /sidebar-post.php:51 /cfg/widgets/mythemes.post_meta.class.php:51
 #: /templates/meta/top.php:32
 #, php-format
 msgid "Writed by %s"
-msgstr ""
+msgstr "由 %s 撰写"
 
 #: /sidebar-post.php:59 /cfg/widgets/mythemes.post_meta.class.php:58
 #, php-format
 msgctxt "Number of comment(s) from widget \"myThemes: Meta Details\""
 msgid "%s Comment"
-msgstr ""
+msgstr "%s 条评论"
 
 #: /sidebar-post.php:73 /cfg/widgets/mythemes.post_meta.class.php:71
 #, php-format
 msgid "%s view"
 msgid_plural "%s views"
-msgstr[0] ""
+msgstr[0] "%s 次浏览"
 
 #: /sidebar-post.php:83
 msgid "Article Categories"
-msgstr ""
+msgstr "文章分类"
 
 #: /sidebar-post.php:97
 msgid "Article Tags"
-msgstr ""
+msgstr "文章标签"
 
 #: /sidebar-special-page.php:31
 msgid "Contact Us"
-msgstr ""
+msgstr "联系我们"
 
 #: /sidebar.php:41
 msgid "Tags"
-msgstr ""
+msgstr "标签"
 
 #: /sidebar.php:66
 msgid "Categories"
-msgstr ""
+msgstr "分类"
 
 #: /sidebar.php:77
 #, php-format
 msgid "View all posts filed under - %s"
-msgstr ""
+msgstr "浏览 %s 下的所有文章 "
 
 #: /tag.php:39
 msgid "Tag Archives"
-msgstr ""
+msgstr "标签归档"
 
 #: /cfg/cfgs.php:7
 msgid ""
