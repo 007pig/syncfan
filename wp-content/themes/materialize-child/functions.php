@@ -30,7 +30,7 @@ add_action('after_setup_theme', function () {
 });
 
 add_filter('pre_get_posts', function ($query) {
-    if ($query->is_main_query()) {
+    if ($query->is_main_query() && !is_admin()) {
         $query->set('post_type', POST_LIKE_POSTTYPES);
     }
     return $query;
