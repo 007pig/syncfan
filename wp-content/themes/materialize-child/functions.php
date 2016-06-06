@@ -46,6 +46,16 @@ add_action('init', function() {
     add_rewrite_rule('^tv/?', 'index.php?post_type=movie&category_name=tv', 'top');
 });
 
+add_action('comment_form_fields', function ($fields) {
+    $comment = $fields['comment'];
+
+    unset($fields['comment']);
+
+    $fields['comment'] = $comment;
+
+    return $fields;
+});
+
 
 /**
  * Show term
