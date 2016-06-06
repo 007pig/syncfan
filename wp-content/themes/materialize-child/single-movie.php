@@ -248,13 +248,13 @@
                                         <ul class="movie-screenshot-container clearfix">
                                             <?php foreach( $images as $image ): ?>
                                                 <li>
+                                                    <p><?php echo $image['caption']; ?></p>
                                                     <a href="<?php echo $image['url']; ?>">
                                                         <img src="<?php echo $image['sizes']['syncfan-movie-screenshot']; ?>"
                                                              width="<?php echo $image['sizes']['syncfan-movie-screenshot-width']; ?>"
                                                              height="<?php echo $image['sizes']['syncfan-movie-screenshot-height']; ?>"
                                                              alt="<?php echo $image['alt']; ?>" />
                                                     </a>
-                                                    <p><?php echo $image['caption']; ?></p>
                                                 </li>
                                             <?php endforeach; ?>
                                         </ul>
